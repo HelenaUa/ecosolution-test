@@ -3,7 +3,7 @@ import menu from 'images/header/menu.png';
 import logo from 'images/header/logo.png';
 
 
-export const HeaderBox = styled.div`
+export const HeaderBox = styled.section`
 position: fixed;
 top: 0;
 display: flex;
@@ -14,11 +14,11 @@ background-color: #F3F5FA;
 padding: 20px 10px;
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 @media screen and (min-width: 769px) {
-    justify-content: flex-start;
+    justify-content: center;
 }`
 
 

@@ -3,40 +3,44 @@ import React from 'react';
 export const ContactUs = () => {
     return (
         <div>
-            <h2></h2>
+            <h2>Contact us</h2>
             <div>
                 <ul>
                     <li>
-                        <p></p>
+                        <p>Phone:</p>
                         <a>
                             <svg>
                                 <use></use>
                             </svg>
+                            38 (098) 12 34 567
                         </a>
                         <a>
                             <svg>
                                 <use></use>
                             </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <p></p>
-                        <a>
-                            <svg>
-                                <use></use>
-                            </svg>
+                            38 (093) 12 34 567
                         </a>
                     </li>
                     <li>
-                        <p></p>
+                        <p>E-mail:</p>
                         <a>
                             <svg>
                                 <use></use>
                             </svg>
+                            office@ecosolution.com
                         </a>
                     </li>
                     <li>
-                        <p></p>
+                        <p>Address:</p>
+                        <a>
+                            <svg>
+                                <use></use>
+                            </svg>
+                            79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
+                        </a>
+                    </li>
+                    <li>
+                        <p>Social Networks:</p>
                         <svg>
                             <use></use>
                         </svg>
@@ -50,7 +54,7 @@ export const ContactUs = () => {
                 <form>
                     <label>
                         <span>Full name:</span>
-                        <input type="name" name="name" required placeholder="John Rosie" />
+                        <input required placeholder="John Rosie" />
                     </label>
                     <label>
                         <span>E-mail:</span>
