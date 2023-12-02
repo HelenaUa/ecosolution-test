@@ -1,9 +1,13 @@
 {
   "files": {
     "main.css": "/ecosolution-test/static/css/main.239d978f.css",
-    "main.js": "/ecosolution-test/static/js/main.f87f498d.js",
+    "main.js": "/ecosolution-test/static/js/main.355842ac.js",
     "static/media/main-s-@2x.jpg": "/ecosolution-test/static/media/main-s-@2x.6dddb64362317a141241.jpg",
+    "static/media/about2-@2x.jpg": "/ecosolution-test/static/media/about2-@2x.a8d36a515f5dbe194c44.jpg",
+    "static/media/about1-@2x.jpg": "/ecosolution-test/static/media/about1-@2x.a798ef69d9ae92aa59ec.jpg",
     "static/media/main-s-@1x.jpg": "/ecosolution-test/static/media/main-s-@1x.bf87218761810842723b.jpg",
+    "static/media/about1-@1x.jpg": "/ecosolution-test/static/media/about1-@1x.96518cf51e2b19d4966e.jpg",
+    "static/media/about2-@1x.jpg": "/ecosolution-test/static/media/about2-@1x.e9582eb6be1adf8af54c.jpg",
     "static/media/fira-sans-latin-800italic.woff": "/ecosolution-test/static/media/fira-sans-latin-800italic.32bfbce2f06e6357d8a2.woff",
     "static/media/fira-sans-latin-700italic.woff": "/ecosolution-test/static/media/fira-sans-latin-700italic.0802094e589562f558dc.woff",
     "static/media/fira-sans-latin-600italic.woff": "/ecosolution-test/static/media/fira-sans-latin-600italic.aebb3b19f57cdca793da.woff",
@@ -54,10 +58,10 @@
     "static/media/oswald-latin-400.woff2": "/ecosolution-test/static/media/oswald-latin-400.5ee68289b9bf597a8aff.woff2",
     "index.html": "/ecosolution-test/index.html",
     "main.239d978f.css.map": "/ecosolution-test/static/css/main.239d978f.css.map",
-    "main.f87f498d.js.map": "/ecosolution-test/static/js/main.f87f498d.js.map"
+    "main.355842ac.js.map": "/ecosolution-test/static/js/main.355842ac.js.map"
   },
   "entrypoints": [
     "static/css/main.239d978f.css",
-    "static/js/main.f87f498d.js"
+    "static/js/main.355842ac.js"
   ]
 }
