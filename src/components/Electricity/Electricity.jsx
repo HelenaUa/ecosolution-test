@@ -1,13 +1,14 @@
 import React from 'react';
+import { ElectricityBox, TitleElectricity, WrapperElectricity, NumberElectricity, UnitElectricity } from './Electricity.styled';
 
 export const Electricity = () => {
     return (
-        <div>
-            <h2>Electricity we produced for all time</h2>
-            <div>
-                <p>1.134.147.814</p>
-                <span>kWh</span>
-            </div>
-        </div>
+        <ElectricityBox>
+            <TitleElectricity>Electricity we produced for all time</TitleElectricity>
+            <WrapperElectricity>
+                <NumberElectricity>1.134.147.814</NumberElectricity>
+                <UnitElectricity>kWh</UnitElectricity>
+            </WrapperElectricity>
+        </ElectricityBox>
     )
 }

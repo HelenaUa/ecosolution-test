@@ -1,7 +1,8 @@
 import React from 'react';
-import { MainBox, WrapperTitle, TitleMain, WrapperText, TextMain, BtnMain, WrapperAddressMain, AddressMain, EmailMain, EcoMain, ImgMain} from './Main.styled';
+import { MainBox, WrapperTitle, TitleMain, WrapperText, TextMain, BtnMain, Arrow, WrapperAddressMain, AddressMain, EmailMain, EcoMain, ImgMain} from './Main.styled';
 import main1x from 'images/main/main-s-@1x.jpg';
 import main2x from 'images/main/main-s-@2x.jpg';
+// import arrow from 'images/main/arrow-right.png';
 
 export const Main = () => {
     return (
@@ -13,7 +14,7 @@ export const Main = () => {
                               non-polluting energy sources, generating power 
                               generation using energy wind, sun, water, biomass
                     </TextMain>
-                    <BtnMain>Learn more</BtnMain>
+                    <BtnMain>Learn more<Arrow /></BtnMain>
                 </WrapperText>
             </WrapperTitle>
             <WrapperAddressMain>

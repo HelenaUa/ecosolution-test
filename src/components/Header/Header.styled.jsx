@@ -29,11 +29,22 @@ background-image: url('${logo}')`
 
 
 export const BtnMenu = styled.div`
-width: 40px;
+width: 39px;
 height: 39px;
 background-image: url('${menu}');
+background-repeat: no-repeat;
+background-color: #DCEFD8;
+display: flex;
+align-items: center;
+border-radius: 50%;
+background-position: center;
+justify-content: center;
 cursor: pointer;
 
+&:hover {
+    background-color: #97D28B;
+  }
+  
 @media screen and (min-width: 481px) and (max-width: 768px) {
     margin-left: 36%;
 }

@@ -26,6 +26,10 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
+  a {
+    text-decoration: none;
+  }
+
   h1,
   h2,
   p {

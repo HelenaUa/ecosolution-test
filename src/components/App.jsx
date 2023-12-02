@@ -1,12 +1,12 @@
 import { GlobalStyle } from "styles/GlobalStyle";
 import { Header } from "./Header/Header";
 import { Main } from "./Main/Main";
-// import { About } from "./About/About";
-// import { Electricity } from "./Electricity/Electricity";
+import { About } from "./About/About";
+import { Electricity } from "./Electricity/Electricity";
 // import { Cases } from "./Cases/Cases";
-// import { Faq } from "./Faq/Faq";
-// import { ContactUs } from "./ContactUs/ContactUs";
-// import { Footer } from "./Footer/Footer";
+import { Faq } from "./Faq/Faq";
+import { ContactUs } from "./ContactUs/ContactUs";
+import { Footer } from "./Footer/Footer";
 
 export const App = () => {
   return (
@@ -26,12 +26,12 @@ export const App = () => {
       <GlobalStyle />
       <Header /> 
       <Main />
-      {/* <About />
+      <About />
       <Electricity />
-      <Cases />
+      {/* <Cases /> */}
       <Faq />
       <ContactUs />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 };

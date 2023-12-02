@@ -1,12 +1,21 @@
 import styled from 'styled-components';
+import arrow from 'images/main/arrow-right.png';
 
 
 export const MainBox = styled.section`
 display: flex;
 flex-direction: column;
-padding: 206px 10px 60px 10px;
+padding: 206px 10px 28px 10px;
 justify-content: center;
-align-items: center;`
+align-items: center;
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    padding-bottom: 80px;
+}
+
+@media screen and (min-width: 769px) {
+    padding-bottom: 100px;
+}`
 
 
 export const WrapperTitle = styled.div`
@@ -103,6 +112,7 @@ margin-bottom: 24px;
 
 
 export const BtnMain = styled.button`
+display: flex;
 color: #173D33;
 font-family: Fira Sans;
 font-size: 16px;
@@ -113,14 +123,31 @@ width: 141px;
 height: 39px;
 border-radius: 500px;
 border: 1px solid #97D28B;
-padding: 4px 4px 4px 16px;
+padding-left: 13px;
 margin-bottom: 48px;
 display: flex;
 justify-content: center;
 align-items: center;
-gap: 12px;
 flex-shrink: 0;
-cursor: pointer;`
+cursor: pointer;
+
+&:hover,
+&:focus{
+    background-color: lightgray;
+    border: 1px solid #97D28B;`
+
+
+export const Arrow = styled.div`
+width: 32px;
+height: 32px;
+background-image: url('${arrow}');
+background-repeat: no-repeat;
+align-items: center;
+background-position: center;
+justify-content: center;
+border-radius: 50%;
+background-color: #97D28B;
+margin-left: 12px;`
 
 
 export const WrapperAddressMain = styled.div`

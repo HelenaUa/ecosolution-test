@@ -7,7 +7,13 @@ export const Header = () => {
         <HeaderBox>
             <Logo />
             <BtnMenu />
-            <BtnHeader>Get in touch</BtnHeader>
+            <BtnHeader>Get in touch<div style={{
+                                            width: '14px',
+                                            height: '14px',
+                                            borderRadius: '50%',
+                                            backgroundColor: '#000000',
+                                            marginLeft: '12px'}}></div>
+            </BtnHeader>
         </HeaderBox>
     )
 }

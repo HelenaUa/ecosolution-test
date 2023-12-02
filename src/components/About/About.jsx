@@ -1,50 +1,62 @@
 import React from 'react';
+import { AboutBox, WrapperTitleAbout, TitleAbout, TextAbout, GridAbout, GridAboutFirst, GridAboutSecond, ImgAbout, DivAbout, TitleGridAbout, TextGridAbout } from './About.styled';
+import about11x from 'images/about/about1-@1x.jpg';
+import about12x from 'images/about/about1-@2x.jpg';
+import about21x from 'images/about/about2-@1x.jpg';
+import about22x from 'images/about/about2-@2x.jpg';
+import CpuCharge from 'images/about/cpu-charge.png';
+import GlobalEdit from 'images/about/global-edit.png';
+import MaximizeCircle from 'images/about/maximize-circle.png';
+import Ranking from 'images/about/ranking.png';
 
 export const About = () => {
     return (
-        <div>
-            <div>
-                <h2>Main values of our company</h2>
-                <p>EcoSolution envisions a world where sustainable energy 
+        <AboutBox>
+            <WrapperTitleAbout>
+                <TitleAbout>Main values of our company</TitleAbout>
+                <TextAbout>EcoSolution envisions a world where sustainable energy 
                    solutions power a brighter and cleaner future for all. 
                    We aspire to be at the forefront of the global shift 
                    towards renewable energy, leading the way in innovative 
                    technologies that harness the power of nature to meet 
                    the world's energy needs.
-                </p>
-            </div>
-            <ul>
-                <li>
-                    <div>
-                        <p>Openness</p>
-                        <span>to the world, people, new ideas and projects</span>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <p>Responsibility</p>
-                        <span>we are aware that the results of our work have 
+                </TextAbout>
+            </WrapperTitleAbout>
+
+            <GridAboutFirst> 
+                    <DivAbout area="a">
+                        <TitleGridAbout><img style={{marginRight: '4px'}} srcSet={`${MaximizeCircle}`} alt='icon'/>Openness</TitleGridAbout>
+                        <TextGridAbout>to the world, people, new ideas and projects</TextGridAbout>
+                    </DivAbout>
+                
+                
+                    <DivAbout area="b">
+                        <TitleGridAbout><img style={{marginRight: '4px'}} srcSet={`${GlobalEdit}`} alt='icon'/>Responsibility</TitleGridAbout>
+                        <TextGridAbout>we are aware that the results of our work have 
                             an impact on our lives and the lives of future generations
-                        </span>
-                    </div>
-                </li>
-                <img></img>
-                <img></img>
-                <li>
-                    <div>
-                        <p>Innovation</p>
-                        <span>we use the latest technology to implement non-standard solutions</span>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <p>Quality</p>
-                        <span>we do not strive to be the first among others, but we want to be
+                        </TextGridAbout>
+                    </DivAbout>
+                
+                <ImgAbout area="c" srcSet={`${about11x} 1x, ${about12x} 2x`} alt='wind farms fields and two men'/>
+
+            </GridAboutFirst>
+            <GridAboutSecond>
+                <ImgAbout area="d" srcSet={`${about21x} 1x, ${about22x} 2x`} alt='man worker firld by solar panels'/>
+                
+                    <DivAbout area="e">
+                        <TitleGridAbout><img style={{marginRight: '4px'}} srcSet={`${CpuCharge}`} alt='icon'/>Innovation</TitleGridAbout>
+                        <TextGridAbout>we use the latest technology to implement non-standard solutions</TextGridAbout>
+                    </DivAbout>
+               
+                
+                    <DivAbout area="f">
+                        <TitleGridAbout><img style={{marginRight: '4px'}} srcSet={`${Ranking}`} alt='icon'/>Quality</TitleGridAbout>
+                        <TextGridAbout>we do not strive to be the first among others, but we want to be
                               the best in our business
-                        </span>
-                    </div>
-                </li>
-            </ul>
-        </div>
+                        </TextGridAbout>
+                    </DivAbout>
+            </GridAboutSecond> 
+            
+        </AboutBox>
     )
 }
