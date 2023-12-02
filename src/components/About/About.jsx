@@ -1,5 +1,5 @@
 import React from 'react';
-import { AboutBox, WrapperTitleAbout, TitleAbout, TextAbout, GridAbout, GridAboutFirst, GridAboutSecond, ImgAbout, DivAbout, TitleGridAbout, TextGridAbout } from './About.styled';
+import { AboutBox, WrapperTitleAbout, TitleAbout, TextAbout, GridAboutFirst, GridAboutSecond, ImgAbout, DivAbout, TitleGridAbout, TextGridAbout } from './About.styled';
 import about11x from 'images/about/about1-@1x.jpg';
 import about12x from 'images/about/about1-@2x.jpg';
 import about21x from 'images/about/about2-@1x.jpg';

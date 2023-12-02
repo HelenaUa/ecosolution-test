@@ -1,11 +1,11 @@
 import React from 'react';
 import {FaqBox, TitleFaq, BtnFaq, QuestionFaq, AnswerFaq, WrapperFaq, WrapperMore, MoreQuestion, BtnContactUs} from './Faq.styled';
-import { useState } from 'react';
-import { BtnContact } from 'components/ContactUs/ContactUs.styled';
+// import { useState } from 'react';
+// import { BtnContact } from 'components/ContactUs/ContactUs.styled';
 
 export const Faq = () => {
-    const [text, setText] = useState();
-    const [buttonText, setButtonText] = useState();
+    // const [text, setText] = useState();
+    // const [buttonText, setButtonText] = useState();
 
     return (
         <FaqBox>
