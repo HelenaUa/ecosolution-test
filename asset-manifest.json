@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecosolution-test/static/css/main.239d978f.css",
-    "main.js": "/ecosolution-test/static/js/main.355842ac.js",
+    "main.js": "/ecosolution-test/static/js/main.cced7297.js",
     "static/media/main-s-@2x.jpg": "/ecosolution-test/static/media/main-s-@2x.6dddb64362317a141241.jpg",
     "static/media/about2-@2x.jpg": "/ecosolution-test/static/media/about2-@2x.a8d36a515f5dbe194c44.jpg",
     "static/media/about1-@2x.jpg": "/ecosolution-test/static/media/about1-@2x.a798ef69d9ae92aa59ec.jpg",
@@ -58,10 +58,10 @@
     "static/media/oswald-latin-400.woff2": "/ecosolution-test/static/media/oswald-latin-400.5ee68289b9bf597a8aff.woff2",
     "index.html": "/ecosolution-test/index.html",
     "main.239d978f.css.map": "/ecosolution-test/static/css/main.239d978f.css.map",
-    "main.355842ac.js.map": "/ecosolution-test/static/js/main.355842ac.js.map"
+    "main.cced7297.js.map": "/ecosolution-test/static/js/main.cced7297.js.map"
   },
   "entrypoints": [
     "static/css/main.239d978f.css",
-    "static/js/main.355842ac.js"
+    "static/js/main.cced7297.js"
   ]
 }
