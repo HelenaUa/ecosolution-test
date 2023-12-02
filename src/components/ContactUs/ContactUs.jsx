@@ -45,7 +45,7 @@ export const ContactUs = () => {
                     </WrapperContact>
 
                     <div>
-                        <Formik initialValues={{ name: '', phone: '' }}>
+                        <Formik initialValues={{ name: '', email: '', phone: '', message: '' }}>
                             <FormCon autoComplete="off">
                                 <LabelStyle htmlFor="name">
                                     Full name:
@@ -61,15 +61,15 @@ export const ContactUs = () => {
                                 />
                                 <ErrorMessage name="name" component="div" />
                                 </LabelStyle>
-                                <LabelStyle htmlFor="phone">
+                                <LabelStyle htmlFor="email">
                                     E-mail:
                                 <Input
                                     type="text"
-                                    name="phone"
+                                    name="email"
                                     // value={phone}
                                     // onChange={onChangePhone}
                                     placeholder="johnrosie@gmail.com"
-                                    pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                                     title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
                                     required
                                 />
@@ -89,11 +89,11 @@ export const ContactUs = () => {
                                 />
                                 <ErrorMessage name="phone" component="div" />
                                 </LabelStyle>
-                                <LabelStyle htmlFor="phone" >
+                                <LabelStyle htmlFor="message" >
                                     Message:
                                 <Input style={{height: '130px', alignItems: 'flex-start'}}
                                     type="tel"
-                                    name="phone"
+                                    name="message"
                                     // value={phone}
                                     // onChange={onChangePhone}
                                     placeholder="Your message"

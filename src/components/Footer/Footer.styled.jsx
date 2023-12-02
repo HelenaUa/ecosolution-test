@@ -18,12 +18,12 @@ position: relative;
 &::before {
     content: '';
     display: block; 
-    width: 320px; 
+    width: 78%; 
     height: 1px; 
     background-color: #97D28B;
     position: absolute;
-    top: -22px; 
-    left: -15px; 
+    top: -30px; 
+    left: 50px; 
     border-radius: 50%; 
 } 
 
@@ -32,7 +32,9 @@ position: relative;
     gap: 97px;
     flex-wrap: nowrap;
     &::before {
-        width: 708px; 
+        width: 98%; 
+        top: -28px; 
+        left: 15px;
     }
 }
     
@@ -41,7 +43,9 @@ position: relative;
     gap: 400px;
     flex-wrap: nowrap;
     &::before {
-        width: 1240px; 
+        width: 98%; 
+        top: -22px; 
+        left: 20px;
     }
 }`
 
@@ -49,7 +53,16 @@ position: relative;
 export const LogoFooter = styled.div`
 width: 269px;
 height: 40px;
-background-image: url('${logo}')`
+background-image: url('${logo}');
+margin-left: 10%;
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-left: 1%;
+}
+
+@media screen and (min-width: 769px) {
+    margin-left: 1%;
+}`
 
 
 export const BtnFooter = styled.button`
@@ -65,16 +78,16 @@ border:none;
 background-color: #97D28B;
 position: absolute;
 top: 4px; 
-left: 300px;
+left: 80%;
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     top: 4px; 
-    left: 695px;
+    left: 94%;
 }
 
 @media screen and (min-width: 769px) {
     top: 4px; 
-    left: 1210px;
+    left: 97%;
 }`
 
 

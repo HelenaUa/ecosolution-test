@@ -1,5 +1,5 @@
 import React from 'react';
-import { AboutBox, WrapperTitleAbout, TitleAbout, TextAbout, GridAboutFirst, GridAboutSecond, ImgAbout, DivAbout, TitleGridAbout, TextGridAbout } from './About.styled';
+import { AboutBox, WrapperTitleAbout, TitleAbout, Icon, TextAbout, GridAboutFirst, GridAboutSecond, ImgAbout, DivAbout, TitleGridAbout, TextGridAbout } from './About.styled';
 import about11x from 'images/about/about1-@1x.jpg';
 import about12x from 'images/about/about1-@2x.jpg';
 import about21x from 'images/about/about2-@1x.jpg';
@@ -24,39 +24,40 @@ export const About = () => {
             </WrapperTitleAbout>
 
             <GridAboutFirst> 
-                    <DivAbout area="a">
-                        <TitleGridAbout><img style={{marginRight: '4px'}} srcSet={`${MaximizeCircle}`} alt='icon'/>Openness</TitleGridAbout>
-                        <TextGridAbout>to the world, people, new ideas and projects</TextGridAbout>
-                    </DivAbout>
-                
-                
-                    <DivAbout area="b">
-                        <TitleGridAbout><img style={{marginRight: '4px'}} srcSet={`${GlobalEdit}`} alt='icon'/>Responsibility</TitleGridAbout>
-                        <TextGridAbout>we are aware that the results of our work have 
-                            an impact on our lives and the lives of future generations
-                        </TextGridAbout>
-                    </DivAbout>
-                
-                <ImgAbout area="c" srcSet={`${about11x} 1x, ${about12x} 2x`} alt='wind farms fields and two men'/>
-
+                <DivAbout>
+                    <TitleGridAbout>
+                        <Icon srcSet={`${MaximizeCircle}`} alt='icon'/>Openness
+                    </TitleGridAbout>
+                    <TextGridAbout>to the world, people, new ideas and projects</TextGridAbout>
+                </DivAbout>
+                <DivAbout>
+                    <TitleGridAbout>
+                        <Icon srcSet={`${GlobalEdit}`} alt='icon'/>Responsibility
+                    </TitleGridAbout>
+                    <TextGridAbout>we are aware that the results of our work have 
+                        an impact on our lives and the lives of future generations
+                    </TextGridAbout>
+                </DivAbout>
+                <ImgAbout srcSet={`${about11x} 1x, ${about12x} 2x`} alt='wind farms fields and two men'/>
             </GridAboutFirst>
+
             <GridAboutSecond>
-                <ImgAbout area="d" srcSet={`${about21x} 1x, ${about22x} 2x`} alt='man worker firld by solar panels'/>
-                
-                    <DivAbout area="e">
-                        <TitleGridAbout><img style={{marginRight: '4px'}} srcSet={`${CpuCharge}`} alt='icon'/>Innovation</TitleGridAbout>
-                        <TextGridAbout>we use the latest technology to implement non-standard solutions</TextGridAbout>
-                    </DivAbout>
-               
-                
-                    <DivAbout area="f">
-                        <TitleGridAbout><img style={{marginRight: '4px'}} srcSet={`${Ranking}`} alt='icon'/>Quality</TitleGridAbout>
-                        <TextGridAbout>we do not strive to be the first among others, but we want to be
-                              the best in our business
-                        </TextGridAbout>
-                    </DivAbout>
-            </GridAboutSecond> 
-            
+                <ImgAbout srcSet={`${about21x} 1x, ${about22x} 2x`} alt='man worker firld by solar panels'/>
+                <DivAbout>
+                    <TitleGridAbout>
+                        <Icon srcSet={`${CpuCharge}`} alt='icon'/>Innovation
+                    </TitleGridAbout>
+                    <TextGridAbout>we use the latest technology to implement non-standard solutions</TextGridAbout>
+                </DivAbout>
+                <DivAbout>
+                    <TitleGridAbout>
+                        <Icon srcSet={`${Ranking}`} alt='icon'/>Quality
+                    </TitleGridAbout>
+                    <TextGridAbout>we do not strive to be the first among others, but we want to be
+                        the best in our business
+                    </TextGridAbout>
+                </DivAbout>
+            </GridAboutSecond>       
         </AboutBox>
     )
 }

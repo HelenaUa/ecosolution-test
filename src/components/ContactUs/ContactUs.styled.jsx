@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import callImg from 'images/contact/call.png';
 import { Form, Field } from 'formik';
 import arrow from 'images/main/arrow-right.png';
 
@@ -23,16 +22,16 @@ flex-wrap: nowrap;
 export const DivContact = styled.div`
 display: flex;
 flex-direction: column;
-width: 100%;
+// width: 100%;
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     flex-direction: row;
-    gap: 20px;
+    gap: 100px;
 }
 
 @media screen and (min-width: 769px) {
     flex-direction: row;
-    gap: 100px;
+    gap: 130px;
 }`
 
 
@@ -65,12 +64,8 @@ flex-direction: column;
 justify-content: flex-start;
 width: 244px;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-   
-}
-
 @media screen and (min-width: 769px) {
-    
+    width: 466px;
 }`
 
 
@@ -93,16 +88,8 @@ font-family: Fira Sans;
 font-size: 16px;
 font-weight: 400;
 line-height: normal;
-letter-spacing: -0.64px;
+letter-spacing: -0.64px;`
 
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
- 
-}
-
-@media screen and (min-width: 769px) {
-    
-}`
 
 export const LinkContact = styled.a`
 display: flex;
@@ -116,15 +103,10 @@ line-height: normal;
 letter-spacing: -0.8px;
 position: relative;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-   
-}
-
 @media screen and (min-width: 769px) {
     font-size: 24px;
     letter-spacing: -0.96px;
 }`
-
 
 
 export const FormCon = styled(Form)`
@@ -136,11 +118,11 @@ background-color: #EAEDF1;
 width: 320px;
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    width: 342px;
+    width: 300px;
 }
 
 @media screen and (min-width: 769px) {
-    width: 596px;
+    width: 510px;
 }`
 
 
@@ -181,6 +163,7 @@ display: flex;
 height: 39px;
 padding-left: 13px;
 margin-left: 200px;
+margin-bottom: 24px;
 justify-content: center;
 align-items: center;
 gap: 12px;
@@ -199,7 +182,8 @@ cursor: pointer;
 }
     
 @media screen and (min-width: 769px) {
-    margin-left: 449px;   
+    margin-bottom: 28px;  
+    margin-left: 410px;
 }`
 
 

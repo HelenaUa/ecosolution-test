@@ -16,6 +16,7 @@ align-items: center;
     padding-bottom: 121px;
 }`
 
+
 export const WrapperTitleAbout = styled.div`
 margin-bottom: 36px;
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -46,16 +47,17 @@ margin-bottom: 24px;
 @media screen and (min-width: 481px) and (max-width: 768px) {
     font-size: 36px;
     line-height: 36px; 
-    width: 35%; //272px
-    margin-right: 12%; //94px
+    width: 35%; 
+    margin-right: 12%; 
 }
 
 @media screen and (min-width: 769px) {
     font-size: 48px;
     line-height: 48px;
-    width: 28%; //365px
-    margin-right: 30%; //416px
+    width: 28%; 
+    margin-right: 30%;
 }`
+
 
 export const TextAbout = styled.div`
 color: #173D33;
@@ -78,8 +80,8 @@ width: 320px;
         height: 110px; 
         background-color: #97D28B;
         position: absolute;
-        top: 2px; /* Встановлюємо відстань зверху від батьківського елемента */
-        left: -15px; /* Встановлюємо відстань зліва від батьківського елемента */
+        top: 2px; 
+        left: -15px; 
         border-radius: 50%; 
     }
 }
@@ -95,43 +97,11 @@ width: 320px;
         height: 87px; 
         background-color: #97D28B;
         position: absolute;
-        top: 3px; /* Встановлюємо відстань зверху від батьківського елемента */
-        left: -105px; /* Встановлюємо відстань зліва від батьківського елемента */
+        top: 3px; 
+        left: -105px; 
         border-radius: 50%; 
     }
 }`
-
-// export const GridAbout = styled.div`
-// display: grid;
-// grid-template-columns: calc((320px - 24px) / 2) calc((320px - 24px) / 2);
-// grid-gap: 3%; 
-// width: 67%; 
-// margin-bottom: 36px;
-
-// @media screen and (min-width: 481px) and (max-width: 768px) {
-//     grid-template-columns: repeat(3, 1fr);
-//     grid-template-rows: repeat(2, auto);
-//     grid-template-areas:
-//       "a b c"
-//       "d e f";
-//     grid-gap: 24px;
-//     max-width: 67%;
-//     margin: 0 auto;
-   
-//     // margin-bottom: 100px;
-// }
-
-// @media screen and (min-width: 769px) {
-//     grid-template-columns: 1fr 1fr 1fr 1fr;
-//     grid-template-rows: 1fr 1fr;
-//     grid-template-areas:
-//       "a b c"
-//       "d e f";
-//     gap: 24px;
-//     max-width: 67%;
-//     margin: 0 auto;
-//     }
-// }`
 
 
 export const GridAboutFirst = styled.div`
@@ -139,7 +109,22 @@ display: grid;
 grid-template-columns: calc((320px - 24px) / 2) calc((320px - 24px) / 2);
 grid-gap: 3%; 
 width: 67%; 
-margin-bottom: 36px;`
+margin-bottom: 24px;
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    grid-template-columns: 159px 159px 342px;
+    grid-gap: 24px;
+    width: 100%; 
+    padding-left: 3%;
+}
+
+@media screen and (min-width: 769px) {
+    grid-template-columns: 274px 274px 596px;
+    grid-gap: 48px;
+    width: 100%;
+    margin-bottom: 48px;
+    padding-left: 3%;
+}`
 
 
 export const GridAboutSecond = styled.div`
@@ -147,29 +132,46 @@ display: grid;
 grid-template-columns: calc((320px - 24px) / 2) calc((320px - 24px) / 2);
 grid-gap: 3%; 
 width: 67%; 
-margin-bottom: 36px;`
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    grid-template-columns: 342px 159px 159px;
+    grid-gap: 24px;
+    width: 100%;
+    padding-left: 3%;
+}
+
+@media screen and (min-width: 769px) {
+    grid-template-columns: 596px 274px 274px;
+    grid-gap: 48px;
+    width: 100%;
+    padding-left: 3%;
+}`
 
 
 export const DivAbout = styled.div`
 height: 224px;
 padding: 13px 12px 0px 12px;
 background-color: #EAEDF1;
+text-align: justify;
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    width: 159px;
-    grid-area: ${({ area }) => area};
-    // width: 159px;
-    // height: 197px;
+    padding-top: 17px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 @media screen and (min-width: 769px) {
-    width: 274px;
-    grid-area: ${({ area }) => area};
+    height: 339px;
+    padding-top: 48px;
+    padding-left: 24px;
+    padding-right: 24px;
 }`
+
 
 export const TitleGridAbout = styled.p`
 color: #173D33;
 font-family: Oswald;
+text-align: justify;
 font-size: 16px;
 font-weight: 400;
 line-height: 24px;
@@ -184,11 +186,48 @@ position: relative;
         height: 1px; 
         background-color: #97D28B;
         position: absolute;
-        top: 63px; /* Встановлюємо відстань зверху від батьківського елемента */
-        left: -1px; /* Встановлюємо відстань зліва від батьківського елемента */
+        top: 63px; 
+        left: -1px; 
         border-radius: 50%; 
     }
-`
+    
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        font-size: 18px;
+        margin-bottom: 64px;
+        &::after { 
+            width: 135px; 
+            top: 83px; 
+            left: -1px; 
+        }
+    }
+    
+    @media screen and (min-width: 769px) {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 119px;
+        &::after { 
+            width: 226px; 
+            top: 123px; 
+            left: -1px; 
+        }
+}`
+
+
+export const Icon = styled.img`
+width: 16px;
+height: 16px;
+margin-right: 4px;
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-right: 5px;
+}
+
+@media screen and (min-width: 769px) {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}`
+
 
 export const TextGridAbout = styled.span`
 color: #173D33;
@@ -198,7 +237,12 @@ font-size: 14px;
 font-weight: 400;
 line-height: normal;
 letter-spacing: -0.56px;
-// width: 124px;`
+
+@media screen and (min-width: 769px) {
+    font-size: 16px;
+    letter-spacing: -0.64px;
+}`
+
 
 export const ImgAbout = styled.img`
 display: none;
@@ -206,15 +250,13 @@ display: none;
 @media screen and (min-width: 481px) and (max-width: 768px) {
     display: flex;
     height: 100%;
-    grid-area: ${({ area }) => area};
-    // width: 340px;  
+    width: 340px;  
 }
 
 @media screen and (min-width: 769px) {
     display: flex;
     height: 100%;
-    grid-area: ${({ area }) => area};
-    // width: 340px;
+    width: 594px;
 }`
 
 
