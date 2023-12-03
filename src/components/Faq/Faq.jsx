@@ -1,21 +1,38 @@
 import React from 'react';
-import {FaqBox, TitleFaq, BtnFaq, QuestionFaq, AnswerFaq, WrapperFaq, WrapperMore, MoreQuestion, BtnContactUs} from './Faq.styled';
-// import { useState } from 'react';
-// import { BtnContact } from 'components/ContactUs/ContactUs.styled';
+import { Link, Element } from 'react-scroll';
+import {FaqBox, 
+        TitleFaq, 
+        BtnFaq, 
+        QuestionFaq, 
+        Minus,
+        Add,
+        AnswerFaq, 
+        WrapperFaq, 
+        WrapperMore, 
+        MoreQuestion, 
+        BtnContactUs} from './Faq.styled';
+import { useState } from 'react';
+
 
 export const Faq = () => {
-    // const [text, setText] = useState();
-    // const [buttonText, setButtonText] = useState();
+    const [textAdd, setTextAdd] = useState([false, true, true, true, true]);
+   
+    const handleToggle = index => {
+        setTextAdd(prevStates => {
+          return prevStates.map((_, i) => (i === index ? !prevStates[i] : true));
+        });
+      };
 
     return (
-        <FaqBox>
+        <Element name="faq">
+        <FaqBox id="fag">
             <TitleFaq>Frequently Asked Questions</TitleFaq>
             
                     <WrapperFaq>
-                        <QuestionFaq><BtnFaq>+</BtnFaq>How do wind turbines and solar panels work together 
+                        <QuestionFaq><BtnFaq onClick={() => handleToggle(0)}> {textAdd[0] ? <Add /> : <Minus />}</BtnFaq>How do wind turbines and solar panels work together 
                             in a renewable energy system?
                         </QuestionFaq>
-                        <AnswerFaq>Wind turbines and solar panels generate electricity 
+                        {!textAdd[0] && (<AnswerFaq>Wind turbines and solar panels generate electricity 
                             through different mechanisms. Wind turbines harness 
                             the kinetic energy of the wind to turn blades, which 
                             then drive a generator. Solar panels convert sunlight 
@@ -26,14 +43,16 @@ export const Faq = () => {
                             times, while solar power is consistent during daylight hours, 
                             resulting in a more stable overall energy output.
                         </AnswerFaq>
+                        )}
                     </WrapperFaq>
                 
                 
                     <WrapperFaq>
                     
-                        <QuestionFaq><BtnFaq>+</BtnFaq>What sets EcoSolution's renewable energy solutions apart 
+                        <QuestionFaq><BtnFaq onClick={() => handleToggle(1)}> {textAdd[1] ? <Add /> : <Minus />}</BtnFaq>What sets EcoSolution's renewable energy solutions apart 
                             from others on the market?
                         </QuestionFaq>
+                        {!textAdd[1] && 
                         <AnswerFaq>Wind turbines and solar panels generate electricity 
                             through different mechanisms. Wind turbines harness 
                             the kinetic energy of the wind to turn blades, which 
@@ -45,13 +64,15 @@ export const Faq = () => {
                             times, while solar power is consistent during daylight hours, 
                             resulting in a more stable overall energy output.
                         </AnswerFaq>
+                        }
                     </WrapperFaq>
                 
                 
                     <WrapperFaq>
-                        <QuestionFaq><BtnFaq>+</BtnFaq>How can businesses and communities benefit from integrating 
+                        <QuestionFaq><BtnFaq onClick={() => handleToggle(2)}> {textAdd[2] ? <Add /> : <Minus />}</BtnFaq>How can businesses and communities benefit from integrating 
                             renewable energy solutions from EcoSolution?
                         </QuestionFaq>
+                        {!textAdd[2] &&
                         <AnswerFaq>Wind turbines and solar panels generate electricity 
                             through different mechanisms. Wind turbines harness 
                             the kinetic energy of the wind to turn blades, which 
@@ -63,13 +84,15 @@ export const Faq = () => {
                             times, while solar power is consistent during daylight hours, 
                             resulting in a more stable overall energy output.
                         </AnswerFaq>
+                        }
                     </WrapperFaq>
                 
                 
                     <WrapperFaq>
-                        <QuestionFaq><BtnFaq>+</BtnFaq>What measures does EcoSolution take to ensure the environmental 
+                        <QuestionFaq><BtnFaq onClick={() => handleToggle(3)}>{textAdd[3] ? <Add /> : <Minus />}</BtnFaq>What measures does EcoSolution take to ensure the environmental 
                             sustainability of its products?
                         </QuestionFaq>
+                        {!textAdd[3] &&
                         <AnswerFaq>Wind turbines and solar panels generate electricity 
                             through different mechanisms. Wind turbines harness 
                             the kinetic energy of the wind to turn blades, which 
@@ -81,13 +104,15 @@ export const Faq = () => {
                             times, while solar power is consistent during daylight hours, 
                             resulting in a more stable overall energy output.
                         </AnswerFaq>
+                        }
                     </WrapperFaq>
                 
                 
                     <WrapperFaq>
-                        <QuestionFaq><BtnFaq>+</BtnFaq>How does EcoSolution engage with local communities and support a 
+                        <QuestionFaq><BtnFaq onClick={() => handleToggle(4)}>{textAdd[4] ? <Add /> : <Minus />}</BtnFaq>How does EcoSolution engage with local communities and support a 
                             just transition to renewable energy?
                         </QuestionFaq>
+                        {!textAdd[4] &&
                         <AnswerFaq>Wind turbines and solar panels generate electricity 
                             through different mechanisms. Wind turbines harness 
                             the kinetic energy of the wind to turn blades, which 
@@ -99,19 +124,27 @@ export const Faq = () => {
                             times, while solar power is consistent during daylight hours, 
                             resulting in a more stable overall energy output.
                         </AnswerFaq>
+                        }
                     </WrapperFaq>
                 
-        
             <WrapperMore>
                 <MoreQuestion>Didn't find the answer to your question?</MoreQuestion>
-                <BtnContactUs>Contact Us<div style={{
-                                            width: '14px',
-                                            height: '14px',
-                                            borderRadius: '50%',
-                                            backgroundColor: '#000000',
-                                            marginLeft: '12px'}}></div>
-                </BtnContactUs>
+                    <Link
+                        to="contactUs"
+                        smooth={true}
+                        duration={800}
+                        offset={-112}
+                    >
+                        <BtnContactUs>Contact Us<div style={{
+                                                    width: '14px',
+                                                    height: '14px',
+                                                    borderRadius: '50%',
+                                                    backgroundColor: '#000000',
+                                                    marginLeft: '12px'}}></div>
+                        </BtnContactUs>
+                    </Link>
             </WrapperMore>
         </FaqBox>
+        </Element>
     )
 }

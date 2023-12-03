@@ -74,7 +74,7 @@ align-items: center;
 background-position: center;
 justify-content: center;
 border-radius: 50%;
-border:none;
+border: none;
 background-color: #97D28B;
 position: absolute;
 top: 4px; 

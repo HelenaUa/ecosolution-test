@@ -1,5 +1,17 @@
 import React from 'react';
-import {ContactBox, TitleContact, DivContact, WrapperContact, DataContact, NameContact, LinkContact, FormCon, Input, BtnContact, Arrow, LabelStyle} from './ContactUs.styled';
+import { Element } from 'react-scroll';
+import {ContactBox, 
+        TitleContact, 
+        DivContact, 
+        WrapperContact, 
+        DataContact, 
+        NameContact, 
+        LinkContact, 
+        FormCon, 
+        Input, 
+        BtnContact, 
+        Arrow, 
+        LabelStyle} from './ContactUs.styled';
 import call from 'images/contact/call.png';
 import sms from 'images/contact/sms.png';
 import map from 'images/contact/map.png';
@@ -10,7 +22,8 @@ import { Formik, ErrorMessage } from 'formik';
 
 export const ContactUs = () => {
     return (
-        <ContactBox>
+        <Element name="contactUs">
+        <ContactBox id="contactUs">
             <TitleContact>Contact us</TitleContact>
                 <DivContact>
                     <WrapperContact>
@@ -130,5 +143,6 @@ export const ContactUs = () => {
             </div> */}
                 </DivContact>
         </ContactBox>
+        </Element>
     )
 }

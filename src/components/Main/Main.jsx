@@ -1,12 +1,25 @@
 import React from 'react';
-import { MainBox, WrapperTitle, TitleMain, WrapperText, TextMain, BtnMain, Arrow, WrapperAddressMain, AddressMain, EmailMain, EcoMain, ImgMain} from './Main.styled';
+import { Element, Link } from 'react-scroll';
+import { MainBox, 
+         WrapperTitle, 
+         TitleMain, 
+         WrapperText, 
+         TextMain, 
+         BtnMain, 
+         Arrow, 
+         WrapperAddressMain,
+         AddressMain, 
+         EmailMain, 
+         EcoMain, 
+         ImgMain} from './Main.styled';
 import main1x from 'images/main/main-s-@1x.jpg';
 import main2x from 'images/main/main-s-@2x.jpg';
 // import arrow from 'images/main/arrow-right.png';
 
 export const Main = () => {
     return (
-        <MainBox>
+        <Element name="main">
+        <MainBox id="main">
             <WrapperTitle>
                 <TitleMain>RENEWABLE ENERGY For any task</TitleMain>
                 <WrapperText>
@@ -14,7 +27,13 @@ export const Main = () => {
                               non-polluting energy sources, generating power 
                               generation using energy wind, sun, water, biomass
                     </TextMain>
-                    <BtnMain>Learn more<Arrow /></BtnMain>
+                    <Link  
+                        to="cases"
+                        smooth={true}
+                        duration={800}
+                        offset={-112}>
+                        <BtnMain>Learn more<Arrow /></BtnMain>
+                    </Link>
                 </WrapperText>
             </WrapperTitle>
             <WrapperAddressMain>
@@ -37,5 +56,6 @@ export const Main = () => {
             //              alt=""
             />
         </MainBox>
+        </Element>
     )
 }

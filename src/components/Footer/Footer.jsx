@@ -1,10 +1,17 @@
 import React from 'react';
-import {FooterBox, WrapperLogoFooter, LogoFooter, BtnFooter, WrapperAddressFooter, LinkFooter} from './Footer.styled';
+import { Link } from 'react-scroll';
+import {FooterBox, 
+        WrapperLogoFooter, 
+        LogoFooter, 
+        BtnFooter, 
+        WrapperAddressFooter, 
+        LinkFooter} from './Footer.styled';
 import facebook from 'images/contact/facebook.png';
 import instagram from 'images/contact/instagram.png';
 
 
 export const Footer = () => {
+    
     return (
         <FooterBox>
             <WrapperLogoFooter>
@@ -13,7 +20,13 @@ export const Footer = () => {
                     <img style={{marginRight: '4px', width: '24px', height: '24px'}} srcSet={`${facebook}`} alt='logo facebook'/>
                     <img style={{marginRight: '4px', width: '24px', height: '24px'}} srcSet={`${instagram}`} alt='logo instagram'/>
                 </div>
-                <BtnFooter></BtnFooter>
+                <Link
+                    to="main"
+                    smooth={true}
+                    duration={800}
+                    offset={-112}>
+                        <BtnFooter />
+                </Link>
             </WrapperLogoFooter>
             <WrapperAddressFooter>
                 <LinkFooter href="https://goo.gl/maps/U55JzRCZsnBUYqKL8" >

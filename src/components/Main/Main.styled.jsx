@@ -164,8 +164,8 @@ align-items: center;
     height: 1px; 
     background-color: #97D28B;
     position: absolute;
-    top: -22px; /* Встановлюємо відстань зверху від батьківського елемента */
-    left: -15px; /* Встановлюємо відстань зліва від батьківського елемента */
+    top: -22px; 
+    left: -15px; 
     border-radius: 50%; 
 }
 

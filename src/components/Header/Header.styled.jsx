@@ -13,6 +13,17 @@ width: 100%;
 background-color: #F3F5FA;
 padding: 20px 10px;
 
+// position: fixed;
+// min-width: 360px;
+// max-width: 480px;
+// width: 100%;
+// left: 50%;
+// transform: translateX(-50%);
+// background-color: rgba(234, 237, 241, 1);
+// z-index: 1000;
+// padding-bottom: 36px;
+// padding-top: 36px;
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
     justify-content: center;
 }
@@ -94,3 +105,15 @@ display: none;
     border: none;
     cursor: pointer;
 }`
+
+
+
+export const Backdrop =styled.div`
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+background: rgba(23, 61, 51, 0.25);
+backdrop-filter: blur(2px);
+z-index: 4;`

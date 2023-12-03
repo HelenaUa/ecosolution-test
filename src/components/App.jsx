@@ -3,7 +3,7 @@ import { Header } from "./Header/Header";
 import { Main } from "./Main/Main";
 import { About } from "./About/About";
 import { Electricity } from "./Electricity/Electricity";
-// import { Cases } from "./Cases/Cases";
+import { Cases } from "./Cases/Cases";
 import { Faq } from "./Faq/Faq";
 import { ContactUs } from "./ContactUs/ContactUs";
 import { Footer } from "./Footer/Footer";
@@ -28,7 +28,7 @@ export const App = () => {
       <Main />
       <About />
       <Electricity />
-      {/* <Cases /> */}
+      <Cases />
       <Faq />
       <ContactUs />
       <Footer />

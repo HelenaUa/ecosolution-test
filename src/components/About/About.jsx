@@ -11,7 +11,7 @@ import Ranking from 'images/about/ranking.png';
 
 export const About = () => {
     return (
-        <AboutBox>
+        <AboutBox id="about">
             <WrapperTitleAbout>
                 <TitleAbout>Main values of our company</TitleAbout>
                 <TextAbout>EcoSolution envisions a world where sustainable energy 
