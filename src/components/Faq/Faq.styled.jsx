@@ -20,6 +20,8 @@ background-color: #F3F5FA;
 }
 
 @media screen and (min-width: 769px) {
+    justify-content: flex-start;
+    align-content: flex-start;
     padding-bottom: 20px;
     height: 900px;
 }`
@@ -34,6 +36,7 @@ line-height: 28px;
 text-transform: uppercase;
 width: 320px;
 margin-bottom: 41px;
+margin-right: 42px;
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     font-size: 36px;
@@ -42,6 +45,7 @@ margin-bottom: 41px;
     position: absolute;
     top: 2720px; 
     left: 52%;
+    margin-right: 0px;
 }
 
 @media screen and (min-width: 769px) {
@@ -49,22 +53,26 @@ margin-bottom: 41px;
     line-height: 48px;
     width: 398px;
     position: absolute;
-    top: 3960px; 
+    top: 3755px; 
     left: 60%;
+    margin-right: 0px;
 }`
 
 
 export const WrapperLeft = styled.div`
+margin-right: 42px;
 @media screen and (min-width: 481px) and (max-width: 768px) {
     position: absolute;
     top: 2740px; 
     left: 5%;
+    margin-right: 0px;
 }
 
 @media screen and (min-width: 769px) {
     position: absolute;
-    top: 3980px; 
+    top: 3776px; 
     left: 5%;
+    margin-right: 0px;
 }`
 
 
@@ -77,7 +85,7 @@ width: 325px;
 &::before {
     content: '';
     display: block; 
-    width: 320px; 
+    width: 296px; 
     height: 1px; 
     background-color: #97D28B;
     position: absolute;
@@ -213,14 +221,17 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 12px;
+margin-right: 42px;
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     margin-top: 97%;
+    margin-right: 0px;
     margin-left: 48%;
 }
 
 @media screen and (min-width: 769px) {
-    margin-top: 50%;
+    margin-top: 56%;
+    margin-right: 0px;
     margin-left: 53%;
 }`
 

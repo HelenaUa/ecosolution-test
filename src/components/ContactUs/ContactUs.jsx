@@ -18,9 +18,39 @@ import map from 'images/contact/map.png';
 import facebook from 'images/contact/facebook.png';
 import instagram from 'images/contact/instagram.png';
 import { Formik, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
+import { useState } from 'react';
+
+const validationSchema = Yup.object().shape({
+    name: Yup.string().required('Full name is required'),
+    email: Yup.string().email('Invalid email address').required('Email is required'),
+    phone: Yup.string().matches(/^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/, 'Invalid phone number').required('Phone is required'),
+    message: Yup.string(),
+  });
 
 
 export const ContactUs = () => {
+    
+
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [message, setMessage] = useState('');
+
+    const onChangeName = e => setName(e.currentTarget.value);
+    const onChangeEmail = e => setEmail(e.currentTarget.value);
+    const onChangePhone = e => setPhone(e.currentTarget.value);
+    const onChangeMessage = e => setMessage(e.currentTarget.value);
+
+    const handleSubmit = (event, { resetForm }) => { 
+        setName('');
+        setEmail('');
+        setPhone('');
+        setMessage('');
+        event.preventDefault();
+        resetForm();
+    };
+
     return (
         <Element name="contactUs">
         <ContactBox id="contactUs">
@@ -58,15 +88,18 @@ export const ContactUs = () => {
                     </WrapperContact>
 
                     <div>
-                        <Formik initialValues={{ name: '', email: '', phone: '', message: '' }}>
+                        <Formik 
+                            onSubmit={handleSubmit} 
+                            initialValues={{ name: '', email: '', phone: '', message: '' }} 
+                            validationSchema={validationSchema}>
                             <FormCon autoComplete="off">
                                 <LabelStyle htmlFor="name">
                                     Full name:
                                 <Input
                                     type="text"
                                     name="name"
-                                    // value={name}
-                                    // onChange={onChangeName}
+                                    value={name}
+                                    onChange={onChangeName}
                                     placeholder="John Rosie"
                                     pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
                                     title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
@@ -79,8 +112,8 @@ export const ContactUs = () => {
                                 <Input
                                     type="text"
                                     name="email"
-                                    // value={phone}
-                                    // onChange={onChangePhone}
+                                    value={email}
+                                    onChange={onChangeEmail}
                                     placeholder="johnrosie@gmail.com"
                                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                                     title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
@@ -93,8 +126,8 @@ export const ContactUs = () => {
                                 <Input
                                     type="tel"
                                     name="phone"
-                                    // value={phone}
-                                    // onChange={onChangePhone}
+                                    value={phone}
+                                    onChange={onChangePhone}
                                     placeholder="380961234567"
                                     pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
                                     title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
@@ -107,11 +140,10 @@ export const ContactUs = () => {
                                 <Input style={{height: '130px', alignItems: 'flex-start'}}
                                     type="tel"
                                     name="message"
-                                    // value={phone}
-                                    // onChange={onChangePhone}
+                                    value={message}
+                                    onChange={onChangeMessage}
                                     placeholder="Your message"
                                     title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
-                                    required
                                 />
                                 <ErrorMessage name="phone" component="div" />
                                 </LabelStyle>

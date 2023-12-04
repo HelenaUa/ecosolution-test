@@ -33,7 +33,6 @@ import card41x from '../../images/cases/card-4-@1x.jpg';
 import card42x from '../../images/cases/card-4-@2x.jpg';
 import card51x from '../../images/cases/card-5-@1x.jpg';
 import card52x from '../../images/cases/card-5-@2x.jpg';
-// import a from '../../images/cases/oo.jpg';
 
 
 export const Cases = () => {
@@ -102,7 +101,7 @@ export const Cases = () => {
     }
 
 return (
-  <Element name="cases">
+  <Element name="cases" style={{backgroundColor: '#F3F5FA'}}>
     <CasesBox id="cases">
         <WrapperCases>
             <TitleCases>Successful cases of our company</TitleCases>
@@ -117,7 +116,7 @@ return (
             </BtnCases>
         </WrapperCases>
 
-        <Swiper spaceBetween={24}
+        <Swiper spaceBetween={24} 
                 slidesPerView={slidesPerView}
                 loop={true}
                 onSlideChange={swiper => setCount(swiper.realIndex + 1)}
@@ -130,7 +129,7 @@ return (
                     {slides.map((slide, index) => (
                         <SwiperSlide key={index}>
                         <ListCases>
-                            <li>
+                            <li style={{marginRight: '0px'}}>
                             <ItemCases>
                                 <picture>
                                 <source
@@ -139,7 +138,7 @@ return (
                                     width="596px"
                                     height="296px"
                                 />
-                                <source
+                                <source 
                                     media="(min-width: 481px) and (max-width: 768px)"
                                     srcSet={`${slide.image1x} 1x, ${slide.image2x} 2x`}
                                     width="342px"
@@ -151,7 +150,7 @@ return (
                                     width="320px"
                                     height="157px"
                                 />
-                                <img src={slide.image1x} alt={slide.alt} />
+                                <img src={slide.image1x} alt={slide.alt}/>
                                 </picture>
                                 <WrapperItemCases>
                                     <InfoTopCases>
