@@ -11,23 +11,23 @@ border-radius: 25px;
 z-index: 10;
 background-color: rgba(23, 61, 51, 0.75);
 backdrop-filter: blur(12.5px);
-width: calc(100% - 48px);
+width: calc(100% - 120px);
 height: calc(100vh - 72px);
 border-radius: 25px;
-margin: 30px 20px;
+margin: 30px 85px;
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  margin: 30px 20px;
-  width: 320px;
-  height: calc(100vh - 72px);
-  max-height: 701px;
+  margin: 30px 106px;
+  width: 320px; 
+  max-height: calc(100vh - 72px);
+//   max-height: 701px;
 }
 
 @media screen and (min-width: 769px) {
-  margin: 20px 60px;
+  margin: 20px 114px;
   width: 365px;
-  height: calc(100vh - 72px);
-  max-height: 873px;
+  max-height: calc(100vh - 72px);
+//   max-height: 873px;
 }`
 
 
@@ -122,15 +122,15 @@ cursor: pointer;`
 export const WrapperSocial = styled.div`
 display: flex;
 gap: 8px;
-margin-top: 800px;
+margin-top: 200%;
 margin-left: 24px;
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    margin-top: 440px;
+    margin-top: 248%;
 }
 
 @media screen and (min-width: 769px) {
-    margin-top: 600px;
+    margin-top: 220%;
 }`
 
 export const LinkSocial = styled.a`

@@ -48,7 +48,6 @@ export const Header = () => {
                 <Backdrop onClick={closeModal}></Backdrop>
             )}
             {modalIsOpened && <Modal close={closeModal}/>}
-           
             <Link
                 to="contactUs"
                 smooth={true}

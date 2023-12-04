@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, Element } from 'react-scroll';
 import {FaqBox, 
         TitleFaq, 
+        WrapperLeft,
         BtnFaq, 
         QuestionFaq, 
         Minus,
@@ -27,7 +28,7 @@ export const Faq = () => {
         <Element name="faq">
         <FaqBox id="fag">
             <TitleFaq>Frequently Asked Questions</TitleFaq>
-            
+            <WrapperLeft>
                     <WrapperFaq>
                         <QuestionFaq><BtnFaq onClick={() => handleToggle(0)}> {textAdd[0] ? <Add /> : <Minus />}</BtnFaq>How do wind turbines and solar panels work together 
                             in a renewable energy system?
@@ -126,7 +127,7 @@ export const Faq = () => {
                         </AnswerFaq>
                         }
                     </WrapperFaq>
-                
+            </WrapperLeft>
             <WrapperMore>
                 <MoreQuestion>Didn't find the answer to your question?</MoreQuestion>
                     <Link

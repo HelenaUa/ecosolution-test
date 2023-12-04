@@ -5,38 +5,41 @@ import logo from 'images/header/logo.png';
 
 export const HeaderBox = styled.section`
 position: fixed;
+z-index: 1000;
 top: 0;
 display: flex;
 flex-direction: row;
-justify-content: space-around;
+justify-content: center;
 width: 100%;
 background-color: #F3F5FA;
-padding: 20px 10px;
-
-// position: fixed;
-// min-width: 360px;
-// max-width: 480px;
-// width: 100%;
-// left: 50%;
-// transform: translateX(-50%);
-// background-color: rgba(234, 237, 241, 1);
-// z-index: 1000;
-// padding-bottom: 36px;
-// padding-top: 36px;
+padding: 36px 20px 36px 0px;
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    justify-content: center;
+    justify-content: space-between;
+    padding: 36px 24px 36px 24px;
 }
 
 @media screen and (min-width: 769px) {
-    justify-content: center;
+    justify-content: space-between;
+    padding: 36px 24px 36px 24px;
 }`
 
 
 export const Logo = styled.div`
+display: flex;
 width: 269px;
 height: 40px;
-background-image: url('${logo}')`
+background-image: url('${logo}');
+background-repeat: no-repeat;
+margin-right: 13px;
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-right: 0px;
+}
+
+@media screen and (min-width: 769px) {
+    margin-right: 0px;
+}`
 
 
 export const BtnMenu = styled.div`
@@ -57,11 +60,11 @@ cursor: pointer;
   }
   
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    margin-left: 36%;
+    margin-left: 30%;
 }
 
 @media screen and (min-width: 769px) {
-    margin-left: 36%;
+    margin-left: 56%;
 }`
 
 
@@ -79,7 +82,8 @@ display: none;
     background-color: #97D28B;
     justify-content: center;
     align-items: center;
-    margin-left: 2%;
+    margin-left: 0px;
+    margin-right: 60px;
     width: 140px;
     height: 39px;
     border-radius: 500px;
@@ -98,14 +102,14 @@ display: none;
     background-color: #97D28B;
     justify-content: center;
     align-items: center;
-    margin-left: 2%;
+    margin-left: 0px;
+    margin-right: 60px;
     width: 140px;
     height: 39px;
     border-radius: 500px;
     border: none;
     cursor: pointer;
 }`
-
 
 
 export const Backdrop =styled.div`

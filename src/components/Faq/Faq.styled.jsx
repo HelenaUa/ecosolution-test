@@ -11,15 +11,15 @@ align-items: center;
 flex-wrap: nowrap;
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    padding-bottom: 100px;
+    padding-bottom: 60px;
     justify-content: flex-start;
-    // flex-direction: row;
+    align-content: flex-start;
+    height: 840px;
 }
 
 @media screen and (min-width: 769px) {
-    padding-bottom: 126px;
-    justify-content: flex-start;
-    // flex-direction: row;
+    padding-bottom: 20px;
+    height: 900px;
 }`
 
 export const TitleFaq = styled.h2`
@@ -36,17 +36,32 @@ margin-bottom: 41px;
     font-size: 36px;
     line-height: 36px; 
     width: 347px;
-    // margin-bottom: 135px;
     position: absolute;
-    top: 4px; 
-    left: 80%;
+    top: 2720px; 
+    left: 52%;
 }
 
 @media screen and (min-width: 769px) {
     font-size: 48px;
     line-height: 48px;
     width: 398px;
-    // margin-bottom: 120px;
+    position: absolute;
+    top: 3960px; 
+    left: 60%;
+}`
+
+
+export const WrapperLeft = styled.div`
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    position: absolute;
+    top: 2740px; 
+    left: 5%;
+}
+
+@media screen and (min-width: 769px) {
+    position: absolute;
+    top: 3980px; 
+    left: 5%;
 }`
 
 export const WrapperFaq = styled.div`
@@ -194,7 +209,17 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-gap: 12px;`
+gap: 12px;
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-top: 97%;
+    margin-left: 48%;
+}
+
+@media screen and (min-width: 769px) {
+    margin-top: 50%;
+    margin-left: 53%;
+}`
 
 
 export const MoreQuestion = styled.p`
