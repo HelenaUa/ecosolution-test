@@ -3,12 +3,10 @@ import { Link } from 'react-scroll';
 import {ModalBox, 
         WrapperBtnClose,
         BtnClose,
-        Close, 
-        ItemModal, 
+        Close,  
         TitleItem, 
         ArrowMenu, 
-        WrapperSocial, 
-        LinkSocial} from './Modal.styled';
+        WrapperSocial} from './Modal.styled';
 import facebook from 'images/modal/facebook.png';
 import instagram from 'images/modal/instagram.png'; 
 
@@ -21,7 +19,7 @@ export const Modal = ({ close }) => {
             </WrapperBtnClose>
             <div>
             <ul>
-                <ItemModal>
+                <li>
                     <Link
                         to="main"
                         smooth={true}
@@ -31,8 +29,8 @@ export const Modal = ({ close }) => {
                     >
                         <TitleItem>Main<ArrowMenu /></TitleItem>
                     </Link>
-                </ItemModal>
-                <ItemModal>
+                </li>
+                <li>
                     <Link
                         to="about"
                         smooth={true}
@@ -42,8 +40,8 @@ export const Modal = ({ close }) => {
                     >
                         <TitleItem>About<ArrowMenu style={{color: 'rgba(255, 255, 255, 1)'}}/></TitleItem>
                     </Link>
-                </ItemModal>
-                <ItemModal>
+                </li>
+                <li>
                     <Link
                         to="cases"
                         smooth={true}
@@ -53,8 +51,8 @@ export const Modal = ({ close }) => {
                     >
                         <TitleItem>Cases<ArrowMenu /></TitleItem>
                     </Link>
-                </ItemModal>
-                <ItemModal>
+                </li>
+                <li>
                     <Link
                         to="faq"
                         smooth={true}
@@ -64,8 +62,8 @@ export const Modal = ({ close }) => {
                     >
                     <TitleItem>FAQ<ArrowMenu /></TitleItem>
                     </Link>
-                </ItemModal>
-                <ItemModal>
+                </li>
+                <li>
                     <Link
                         to="contactUs"
                         smooth={true}
@@ -75,21 +73,21 @@ export const Modal = ({ close }) => {
                     >
                     <TitleItem>Contact Us<ArrowMenu /></TitleItem>
                     </Link>
-                </ItemModal>
+                </li>
             </ul>
             <WrapperSocial>
-                <LinkSocial
+                <a
                     href="https://www.facebook.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                 ><img style={{marginRight: '4px', color: '#ffffff', width: '24px', height: '24px'}} srcSet={`${facebook}`} alt='logo facebook'/>
-                </LinkSocial>
-                <LinkSocial
+                </a>
+                <a
                     href="https://www.instagram.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                 ><img style={{marginRight: '4px', color: '#ffffff', width: '24px', height: '24px'}} srcSet={`${instagram}`} alt='logo instagram'/>
-                </LinkSocial>
+                </a>
             </WrapperSocial>
             </div>
         </ModalBox>  

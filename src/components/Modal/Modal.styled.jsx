@@ -20,14 +20,12 @@ margin: 30px 85px;
   margin: 30px 106px;
   width: 320px; 
   max-height: calc(100vh - 72px);
-//   max-height: 701px;
 }
 
 @media screen and (min-width: 769px) {
   margin: 20px 114px;
   width: 365px;
   max-height: calc(100vh - 72px);
-//   max-height: 873px;
 }`
 
 
@@ -86,10 +84,8 @@ margin-bottom: 24px;
     }
 }`
 
-export const ItemModal = styled.li`
-`
 
-export const TitleItem = styled.p`
+export const TitleItem = styled.div`
 display: flex;
 flex-direction: row;
 align-items: baseline;
@@ -105,6 +101,7 @@ letter-spacing: -0.96px;
     &:hover {
         color: #97D28B;
     }`
+
 
 export const ArrowMenu = styled.div`
 width: 16px;
@@ -133,18 +130,3 @@ margin-left: 24px;
     margin-top: 220%;
 }`
 
-export const LinkSocial = styled.a`
-`
-
-
-// export const Facebook = styled.div`
-// width: 20px;
-// height: 20px;
-// background-image: url('${facebook}');
-// background-repeat: no-repeat;
-// color: #ffffff;
-// display: flex;
-// align-items: center;
-// background-position: center;
-// justify-content: center;
-// cursor: pointer;`
