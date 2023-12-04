@@ -14,7 +14,7 @@ import { MainBox,
          ImgMain} from './Main.styled';
 import main1x from 'images/main/main-s-@1x.jpg';
 import main2x from 'images/main/main-s-@2x.jpg';
-// import arrow from 'images/main/arrow-right.png';
+
 
 export const Main = () => {
     return (
@@ -43,17 +43,6 @@ export const Main = () => {
             </WrapperAddressMain>
             <ImgMain 
              srcSet={`${main1x} 1x, ${main2x} 2x`} alt='wind generator on the field'
-            // srcset="
-            //              ./images/main/main-l-@1x.jpg 1242w,
-            //              ./images/main/main-m-@1x.jpg 709w,
-            //              ./images/main/main-s-@1x.jpg 420w,
-            //              ./images/main/main-l-@2x.jpg 2484w,
-            //              ./images/main/main-m-@2x.jpg 1418w,
-            //              ./images/main/main-s-@2x.jpg 840w
-            //              " 
-            //              sizes="(min-width: 1200px) 608px, (min-width: 768px) 336px, (min-width: 480px) 280px, 100vw"
-            //              src="../images/main/main-s-@1x.jpg"
-            //              alt=""
             />
         </MainBox>
         </Element>

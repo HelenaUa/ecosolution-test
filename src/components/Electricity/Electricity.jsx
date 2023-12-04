@@ -1,5 +1,10 @@
 import React from 'react';
-import { ElectricityBox, TitleElectricity, WrapperElectricity, NumberElectricity, UnitElectricity } from './Electricity.styled';
+import { ElectricityBox, 
+         TitleElectricity, 
+         WrapperElectricity, 
+         NumberElectricity, 
+         UnitElectricity } from './Electricity.styled';
+
 
 export const Electricity = () => {
     return (

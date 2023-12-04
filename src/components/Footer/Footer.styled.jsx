@@ -6,7 +6,18 @@ import arrow from 'images/footer/arrow-right.png';
 export const FooterBox = styled.section`
 display: flex;
 flex-direction: column;
-padding: 20px 10px;`
+padding: 20px 10px;
+background-color: #F3F5FA;
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    justify-content: space-between;
+    padding: 36px 38px 36px 34px;
+}
+
+@media screen and (min-width: 769px) {
+    justify-content: space-between;
+    padding: 36px 70px 36px 40px;
+}`
 
 
 export const WrapperLogoFooter = styled.div`
@@ -32,9 +43,9 @@ position: relative;
     gap: 97px;
     flex-wrap: nowrap;
     &::before {
-        width: 98%; 
+        width: 99%; 
         top: -28px; 
-        left: 15px;
+        left: 6px;
     }
 }
     
@@ -43,9 +54,9 @@ position: relative;
     gap: 400px;
     flex-wrap: nowrap;
     &::before {
-        width: 98%; 
+        width: 99%; 
         top: -22px; 
-        left: 20px;
+        left: 5px;
     }
 }`
 
@@ -62,6 +73,16 @@ margin-left: 10%;
 
 @media screen and (min-width: 769px) {
     margin-left: 1%;
+}`
+
+
+export const SocialFooter = styled.div`
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-right: 23%;
+}
+
+@media screen and (min-width: 769px) {
+    margin-right: 8%;
 }`
 
 
@@ -82,7 +103,7 @@ left: 80%;
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     top: 4px; 
-    left: 94%;
+    left: 95%;
 }
 
 @media screen and (min-width: 769px) {

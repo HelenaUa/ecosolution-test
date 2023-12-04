@@ -11,6 +11,7 @@ padding: 0px 10px 36px 10px;
 // justify-content: center;
 // align-items: center;
 // flex-wrap: nowrap;
+background-color: #F3F5FA;
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     // padding-bottom: 100px;

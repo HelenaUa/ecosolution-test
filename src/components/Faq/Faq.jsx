@@ -22,7 +22,7 @@ export const Faq = () => {
         setTextAdd(prevStates => {
           return prevStates.map((_, i) => (i === index ? !prevStates[i] : true));
         });
-      };
+    };
 
     return (
         <Element name="faq">
@@ -47,9 +47,7 @@ export const Faq = () => {
                         )}
                     </WrapperFaq>
                 
-                
                     <WrapperFaq>
-                    
                         <QuestionFaq><BtnFaq onClick={() => handleToggle(1)}> {textAdd[1] ? <Add /> : <Minus />}</BtnFaq>What sets EcoSolution's renewable energy solutions apart 
                             from others on the market?
                         </QuestionFaq>
@@ -67,7 +65,6 @@ export const Faq = () => {
                         </AnswerFaq>
                         }
                     </WrapperFaq>
-                
                 
                     <WrapperFaq>
                         <QuestionFaq><BtnFaq onClick={() => handleToggle(2)}> {textAdd[2] ? <Add /> : <Minus />}</BtnFaq>How can businesses and communities benefit from integrating 
@@ -88,7 +85,6 @@ export const Faq = () => {
                         }
                     </WrapperFaq>
                 
-                
                     <WrapperFaq>
                         <QuestionFaq><BtnFaq onClick={() => handleToggle(3)}>{textAdd[3] ? <Add /> : <Minus />}</BtnFaq>What measures does EcoSolution take to ensure the environmental 
                             sustainability of its products?
@@ -107,7 +103,6 @@ export const Faq = () => {
                         </AnswerFaq>
                         }
                     </WrapperFaq>
-                
                 
                     <WrapperFaq>
                         <QuestionFaq><BtnFaq onClick={() => handleToggle(4)}>{textAdd[4] ? <Add /> : <Minus />}</BtnFaq>How does EcoSolution engage with local communities and support a 

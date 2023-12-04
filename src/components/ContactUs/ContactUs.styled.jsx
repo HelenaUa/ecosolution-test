@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Form, Field } from 'formik';
 import arrow from 'images/main/arrow-right.png';
 
+
 export const ContactBox = styled.section`
 display: flex;
 flex-direction: column;
@@ -9,6 +10,7 @@ padding: 0px 10px 61px 10px;
 justify-content: center;
 align-items: center;
 flex-wrap: nowrap;
+background-color: #F3F5FA;
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     padding-bottom: 141px;
@@ -22,7 +24,6 @@ flex-wrap: nowrap;
 export const DivContact = styled.div`
 display: flex;
 flex-direction: column;
-// width: 100%;
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     flex-direction: row;

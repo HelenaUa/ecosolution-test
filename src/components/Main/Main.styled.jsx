@@ -8,6 +8,7 @@ flex-direction: column;
 padding: 206px 10px 28px 10px;
 justify-content: center;
 align-items: center;
+background-color: #F3F5FA;
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     padding-bottom: 80px;

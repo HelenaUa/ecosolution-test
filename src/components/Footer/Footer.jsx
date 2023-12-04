@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import {FooterBox, 
         WrapperLogoFooter, 
-        LogoFooter, 
+        LogoFooter,
+        SocialFooter, 
         BtnFooter, 
         WrapperAddressFooter, 
         LinkFooter} from './Footer.styled';
@@ -11,15 +12,28 @@ import instagram from 'images/contact/instagram.png';
 
 
 export const Footer = () => {
-    
     return (
         <FooterBox>
             <WrapperLogoFooter>
                 <LogoFooter />
-                <div style={{display: 'flex', flexDirection: 'row', gap: '32px', justifyContent: 'center', alignItems: 'center',marginBottom: '24px'}}> 
-                    <img style={{marginRight: '4px', width: '24px', height: '24px'}} srcSet={`${facebook}`} alt='logo facebook'/>
-                    <img style={{marginRight: '4px', width: '24px', height: '24px'}} srcSet={`${instagram}`} alt='logo instagram'/>
-                </div>
+                <SocialFooter style={{display: 'flex', flexDirection: 'row', gap: '32px', justifyContent: 'center', alignItems: 'center',marginBottom: '24px'}}> 
+                    <a  
+                        href="https://www.facebook.com/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                            <img 
+                                style={{marginRight: '4px', width: '24px', height: '24px'}} 
+                                srcSet={`${facebook}`} alt='logo facebook'/>
+                    </a>
+                    <a 
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                            <img 
+                                style={{marginRight: '4px', width: '24px', height: '24px'}} 
+                                srcSet={`${instagram}`} alt='logo instagram'/>
+                    </a>
+                </SocialFooter>
                 <Link
                     to="main"
                     smooth={true}

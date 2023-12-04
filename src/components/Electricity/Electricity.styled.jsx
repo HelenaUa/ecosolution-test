@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 
+
 export const ElectricityBox = styled.section`
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;`
+align-items: center;
+background-color: #F3F5FA;`
+
 
 export const TitleElectricity = styled.h2`
 color: #173D33;
@@ -31,6 +34,7 @@ margin-bottom: 96px;
     margin-bottom: 120px;
 }`
 
+
 export const WrapperElectricity = styled.div`
 display: flex;
 flex-direction: row;
@@ -46,8 +50,8 @@ position: relative;
     height: 48px; 
     background-color: #97D28B;
     position: absolute;
-    top: -70px; /* Встановлюємо відстань зверху від батьківського елемента */
-    left: 50%; /* Встановлюємо відстань зліва від батьківського елемента */
+    top: -70px; 
+    left: 50%; 
     border-radius: 50%; 
 }
 
@@ -68,6 +72,7 @@ position: relative;
         left: 50%;
     }
 }`
+
 
 export const NumberElectricity = styled.p`
 color: #97D28B;
@@ -90,6 +95,7 @@ margin-right: 8px;
     line-height: 164px;
     margin-right: 24px;
 }`
+
 
 export const UnitElectricity = styled.span`
 color: #173D33;

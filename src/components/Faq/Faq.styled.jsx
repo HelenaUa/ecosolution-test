@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import add from '../../images/faq/add.png';
 import minus from '../../images/faq/minus.png';
 
+
 export const FaqBox = styled.section`
 display: flex;
 flex-direction: column;
@@ -9,6 +10,7 @@ padding: 0px 10px 36px 10px;
 justify-content: center;
 align-items: center;
 flex-wrap: nowrap;
+background-color: #F3F5FA;
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     padding-bottom: 60px;
@@ -21,6 +23,7 @@ flex-wrap: nowrap;
     padding-bottom: 20px;
     height: 900px;
 }`
+
 
 export const TitleFaq = styled.h2`
 color: #173D33;
@@ -63,6 +66,7 @@ export const WrapperLeft = styled.div`
     top: 3980px; 
     left: 5%;
 }`
+
 
 export const WrapperFaq = styled.div`
 display: flex;
@@ -192,7 +196,6 @@ margin-left: 26px;
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     width: 264px;
-    // margin-left: 28px;
 }
 
 @media screen and (min-width: 769px) {
@@ -230,10 +233,6 @@ font-size: 18px;
 font-weight: 400;
 line-height: normal;
 letter-spacing: -0.72px;
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    
-}
 
 @media screen and (min-width: 769px) {
     font-size: 24px;

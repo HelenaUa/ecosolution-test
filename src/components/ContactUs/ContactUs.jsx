@@ -120,27 +120,6 @@ export const ContactUs = () => {
                             </FormCon>
                         </Formik> 
                     </div>
-            {/* <div>
-                <form>
-                    <label>
-                        <span>Full name:</span>
-                        <input required placeholder="John Rosie" />
-                    </label>
-                    <label>
-                        <span>E-mail:</span>
-                        <input type="email" name="email" required placeholder="johnrosie@gmail.com" />
-                    </label>
-                    <label>
-                        <span>Phone:</span>
-                        <input type="phone" name="phone" required placeholder="380961234567" />
-                    </label>
-                    <label>
-                        <span>Message:</span>
-                        <input type="message" name="message" required placeholder="Your message" />
-                    </label>  
-                </form>
-                <button>Send</button>
-            </div> */}
                 </DivContact>
         </ContactBox>
         </Element>

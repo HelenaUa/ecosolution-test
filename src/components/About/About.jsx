@@ -1,5 +1,15 @@
 import React from 'react';
-import { AboutBox, WrapperTitleAbout, TitleAbout, Icon, TextAbout, GridAboutFirst, GridAboutSecond, ImgAbout, DivAbout, TitleGridAbout, TextGridAbout } from './About.styled';
+import { AboutBox, 
+         WrapperTitleAbout, 
+         TitleAbout, 
+         Icon, 
+         TextAbout, 
+         GridAboutFirst, 
+         GridAboutSecond, 
+         ImgAbout, 
+         DivAbout, 
+         TitleGridAbout, 
+         TextGridAbout } from './About.styled';
 import about11x from 'images/about/about1-@1x.jpg';
 import about12x from 'images/about/about1-@2x.jpg';
 import about21x from 'images/about/about2-@1x.jpg';
@@ -8,6 +18,7 @@ import CpuCharge from 'images/about/cpu-charge.png';
 import GlobalEdit from 'images/about/global-edit.png';
 import MaximizeCircle from 'images/about/maximize-circle.png';
 import Ranking from 'images/about/ranking.png';
+
 
 export const About = () => {
     return (
