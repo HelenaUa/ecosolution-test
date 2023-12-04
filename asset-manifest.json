@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecosolution-test/static/css/main.0c6ec9fc.css",
-    "main.js": "/ecosolution-test/static/js/main.2ac16574.js",
+    "main.js": "/ecosolution-test/static/js/main.5a11be40.js",
     "static/media/card-5-@2x.jpg": "/ecosolution-test/static/media/card-5-@2x.4e05e3af6da1ee483028.jpg",
     "static/media/card-4-@2x.jpg": "/ecosolution-test/static/media/card-4-@2x.c16073096b1fba46ec78.jpg",
     "static/media/card-3-@2x.jpg": "/ecosolution-test/static/media/card-3-@2x.d18a9314c8a2e7c2ea0b.jpg",
@@ -68,10 +68,10 @@
     "static/media/oswald-latin-400.woff2": "/ecosolution-test/static/media/oswald-latin-400.5ee68289b9bf597a8aff.woff2",
     "index.html": "/ecosolution-test/index.html",
     "main.0c6ec9fc.css.map": "/ecosolution-test/static/css/main.0c6ec9fc.css.map",
-    "main.2ac16574.js.map": "/ecosolution-test/static/js/main.2ac16574.js.map"
+    "main.5a11be40.js.map": "/ecosolution-test/static/js/main.5a11be40.js.map"
   },
   "entrypoints": [
     "static/css/main.0c6ec9fc.css",
-    "static/js/main.2ac16574.js"
+    "static/js/main.5a11be40.js"
   ]
 }
