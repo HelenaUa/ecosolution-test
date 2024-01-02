@@ -1,5 +1,5 @@
 import React from 'react';
-import { Element, Link } from 'react-scroll';
+import { Element } from 'react-scroll';
 import { MainBox, 
          WrapperTitle, 
          TitleMain, 
@@ -27,18 +27,17 @@ export const Main = () => {
                               non-polluting energy sources, generating power 
                               generation using energy wind, sun, water, biomass
                     </TextMain>
-                    <Link  
+                    <BtnMain  
                         to="cases"
                         smooth={true}
                         duration={800}
-                        offset={-112}>
-                        <BtnMain>Learn more<Arrow /></BtnMain>
-                    </Link>
+                        offset={-112}>Learn more<Arrow />
+                    </BtnMain>
                 </WrapperText>
             </WrapperTitle>
             <WrapperAddressMain>
-                <AddressMain>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</AddressMain>
-                <EmailMain>office@ecosolution.com</EmailMain>
+                <AddressMain href="https://goo.gl/maps/U55JzRCZsnBUYqKL8">79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</AddressMain>
+                <EmailMain href="mailto:office@ecosolution.com">office@ecosolution.com</EmailMain>
                 <EcoMain>ecosolution © 2023</EcoMain>
             </WrapperAddressMain>
             <ImgMain 

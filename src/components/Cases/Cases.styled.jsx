@@ -104,17 +104,21 @@ left: 47%;
 
 
 export const BtnArrowLeft = styled.button`
-display: inline-flex;
+display: inline-block;
 width: 66px;
 height: 66px;
 background-image: url('${arrowLeft}');
 background-repeat: no-repeat;
-align-items: center;
 background-position: center;
-justify-content: center;
 border-radius: 50%;
 background-color: transparent;
 border: 1px solid #173D33;
+cursor: pointer;
+
+&:hover,
+&:focus{
+    background-color: lightgray;
+}
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
    
@@ -126,7 +130,7 @@ border: 1px solid #173D33;
 }`
 
 export const BtnArrowRight = styled.button`
-display: inline-flex;
+display: inline-block;
 width: 66px;
 height: 66px;
 background-image: url('${arrowRight}');
@@ -137,6 +141,12 @@ justify-content: center;
 border-radius: 50%;
 background-color: transparent;
 border: 1px solid #173D33;
+cursor: pointer;
+
+&:hover,
+&:focus{
+    background-color: lightgray;
+}
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
    
@@ -232,6 +242,7 @@ position: relative;
 
 
 export const BtnArrowTop = styled.button`
+display: inline-block;
 width: 60px;
 height: 60px;
 background-image: url('${arrowTop}');
@@ -242,6 +253,12 @@ justify-content: center;
 border-radius: 50%;
 background-color: #97D28B;
 border: none;
+cursor: pointer;
+
+&:hover,
+&:focus{
+    background-color: lightgray;
+}
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     // width: 58px;

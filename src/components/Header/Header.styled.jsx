@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 import menu from 'images/header/menu.png';
 import logo from 'images/header/logo.png';
 
@@ -25,7 +26,7 @@ padding: 36px 20px 36px 0px;
 }`
 
 
-export const Logo = styled.div`
+export const Logo = styled.a`
 display: flex;
 width: 269px;
 height: 40px;
@@ -42,20 +43,22 @@ margin-right: 13px;
 }`
 
 
-export const BtnMenu = styled.div`
+export const BtnMenu = styled.button`
 width: 39px;
 height: 39px;
 background-image: url('${menu}');
 background-repeat: no-repeat;
 background-color: #DCEFD8;
-display: flex;
+display: inline-block;
 align-items: center;
+border: none;
 border-radius: 50%;
 background-position: center;
 justify-content: center;
 cursor: pointer;
 
-&:hover {
+&:hover,
+&:focus {
     background-color: #97D28B;
   }
   
@@ -68,7 +71,7 @@ cursor: pointer;
 }`
 
 
-export const BtnHeader = styled.button`
+export const BtnHeader = styled(Link)`
 display: none;
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -89,10 +92,16 @@ display: none;
     border-radius: 500px;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover,
+    &:focus {
+        background-color: #DCEFD8;
+    }
 }
 
 @media screen and (min-width: 769px) {
-    display: flex;
+    display: inline-flex;
     color: #173D33;
     font-family: Fira Sans;
     font-size: 16px;
@@ -109,6 +118,12 @@ display: none;
     border-radius: 500px;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover,
+    &:focus {
+        background-color: #DCEFD8;
+    }
 }`
 
 

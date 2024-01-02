@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 import arrow from 'images/main/arrow-right.png';
 
 
@@ -8,6 +9,7 @@ flex-direction: column;
 padding: 206px 10px 28px 10px;
 justify-content: center;
 align-items: center;
+background-color: #F3F5FA;
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     padding-bottom: 80px;
@@ -111,8 +113,9 @@ margin-bottom: 24px;
 }`
 
 
-export const BtnMain = styled.button`
-display: flex;
+export const BtnMain = styled(Link)`
+display: inline-flex;
+gap: 12px;
 color: #173D33;
 font-family: Fira Sans;
 font-size: 16px;
@@ -125,16 +128,15 @@ border-radius: 500px;
 border: 1px solid #97D28B;
 padding-left: 13px;
 margin-bottom: 48px;
-display: flex;
 justify-content: center;
 align-items: center;
 flex-shrink: 0;
 cursor: pointer;
+transition: background-color 0.3s, color 0.3s;
 
 &:hover,
 &:focus{
-    background-color: lightgray;
-    border: 1px solid #97D28B;`
+    background-color: lightgray;`
 
 
 export const Arrow = styled.div`
@@ -194,7 +196,7 @@ align-items: center;
 }`
 
 
-export const AddressMain = styled.p`
+export const AddressMain = styled.a`
 color: #173D33;
 font-family: Fira Sans;
 font-size: 16px;
@@ -216,7 +218,7 @@ margin-bottom: 8px;
 }`
 
 
-export const EmailMain = styled.p`
+export const EmailMain = styled.a`
 color: #173D33;
 font-family: Fira Sans;
 font-size: 16px;

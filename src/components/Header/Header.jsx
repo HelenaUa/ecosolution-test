@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
 import { HeaderBox, 
          Logo,  
          BtnHeader,
@@ -42,25 +41,23 @@ export const Header = () => {
 
     return (  
         <HeaderBox style={headerStyle}>
-            <Logo />
-            <BtnMenu onClick={closeModal}/>
+            <Logo href='public/index.html'/>
+            <BtnMenu type='button' onClick={closeModal}/>
             {showBackdrop && (
                 <Backdrop onClick={closeModal}></Backdrop>
             )}
             {modalIsOpened && <Modal close={closeModal}/>}
-            <Link
+            <BtnHeader
                 to="contactUs"
                 smooth={true}
                 duration={800}
-                offset={-112}>
-                <BtnHeader>Get in touch<div style={{
+                offset={-112}>Get in touch<div style={{
                                             width: '14px',
                                             height: '14px',
                                             borderRadius: '50%',
                                             backgroundColor: '#000000',
                                             marginLeft: '12px'}}></div>
-                </BtnHeader>
-            </Link>
+            </BtnHeader>
         </HeaderBox>     
     )
 }

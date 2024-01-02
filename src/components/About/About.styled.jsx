@@ -35,7 +35,7 @@ margin-bottom: 36px;
 }`
 
 
-export const TitleAbout = styled.p`
+export const TitleAbout = styled.h2`
 color: #173D33;
 font-family: Oswald;
 font-size: 28px;

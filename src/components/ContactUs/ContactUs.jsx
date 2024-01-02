@@ -6,6 +6,7 @@ import {ContactBox,
         WrapperContact, 
         DataContact, 
         NameContact, 
+        SocialLink,
         LinkContact, 
         FormCon, 
         Input, 
@@ -63,8 +64,22 @@ export const ContactUs = () => {
                         <DataContact>
                             <NameContact style={{marginBottom: '20px'}}>Social Networks:</NameContact>
                             <div style={{display: 'flex', flexDirection: 'row', gap: '32px'}}> 
-                                <img style={{marginRight: '4px', width: '24px', height: '24px'}} srcSet={`${facebook}`} alt='icon facebook'/>
-                                <img style={{marginRight: '4px', width: '24px', height: '24px'}} srcSet={`${instagram}`} alt='icon instagram'/>
+                                <SocialLink 
+                                    href="https://www.facebook.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                        <img 
+                                            style={{marginRight: '4px', width: '24px', height: '24px'}} 
+                                            srcSet={`${facebook}`} alt='icon facebook'/>
+                                </SocialLink >
+                                <SocialLink  
+                                    href="https://www.instagram.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                        <img 
+                                            style={{marginRight: '4px', width: '24px', height: '24px'}} 
+                                            srcSet={`${instagram}`} alt='icon instagram'/>
+                                </SocialLink >
                             </div>
                         </DataContact>
                     </WrapperContact>

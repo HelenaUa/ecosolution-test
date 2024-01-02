@@ -92,6 +92,13 @@ line-height: normal;
 letter-spacing: -0.64px;`
 
 
+export const SocialLink = styled.a`
+&:hover,
+    &:focus {
+        fill: #DCEFD8;
+    }`
+
+
 export const LinkContact = styled.a`
 display: flex;
 flex-direction: row;
@@ -103,6 +110,11 @@ font-weight: 400;
 line-height: normal;
 letter-spacing: -0.8px;
 position: relative;
+
+&:hover,
+    &:focus {
+        color: #DCEFD8;
+    }
 
 @media screen and (min-width: 769px) {
     font-size: 24px;
@@ -160,23 +172,25 @@ font-size: 16px;
 font-weight: 400;
 line-height: 18px;
 letter-spacing: -0.64px;
-display: flex;
-height: 39px;
+display: inline-flex;
 padding-left: 13px;
 margin-left: 200px;
 margin-bottom: 24px;
-justify-content: center;
+justify-content: flex-end;
 align-items: center;
 gap: 12px;
 width: 99px;
+height: 39px;
 border: 1px solid #97D28B;
 border-radius: 500px;
 background-color: white;
 cursor: pointer;
+
 &:hover,
 &:focus{
     background-color: lightgray;
     border: 1px solid #97D28B;
+}
     
 @media screen and (min-width: 481px) and (max-width: 768px) {
     margin-left: 219px;
@@ -189,8 +203,8 @@ cursor: pointer;
 
 
 export const Arrow = styled.div`
-width: 32px;
-height: 32px;
+width: 30px;
+height: 30px;
 background-image: url('${arrow}');
 background-repeat: no-repeat;
 align-items: center;

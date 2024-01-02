@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Element } from 'react-scroll';
+import { Element } from 'react-scroll';
 import {FaqBox, 
         TitleFaq, 
         WrapperLeft,
@@ -125,20 +125,18 @@ export const Faq = () => {
             </WrapperLeft>
             <WrapperMore>
                 <MoreQuestion>Didn't find the answer to your question?</MoreQuestion>
-                    <Link
+                    <BtnContactUs
                         to="contactUs"
                         smooth={true}
                         duration={800}
                         offset={-112}
-                    >
-                        <BtnContactUs>Contact Us<div style={{
-                                                    width: '14px',
-                                                    height: '14px',
-                                                    borderRadius: '50%',
-                                                    backgroundColor: '#000000',
-                                                    marginLeft: '12px'}}></div>
-                        </BtnContactUs>
-                    </Link>
+                    >Contact Us<div style={{
+                                            width: '14px',
+                                            height: '14px',
+                                            borderRadius: '50%',
+                                            backgroundColor: '#000000',
+                                            marginLeft: '12px'}}></div>
+                    </BtnContactUs>
             </WrapperMore>
         </FaqBox>
         </Element>

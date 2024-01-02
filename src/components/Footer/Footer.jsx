@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-scroll';
 import {FooterBox, 
         WrapperLogoFooter, 
         LogoFooter,
@@ -34,13 +33,12 @@ export const Footer = () => {
                                 srcSet={`${instagram}`} alt='logo instagram'/>
                     </a>
                 </SocialFooter>
-                <Link
+                <BtnFooter
                     to="main"
                     smooth={true}
                     duration={800}
                     offset={-112}>
-                        <BtnFooter />
-                </Link>
+                </BtnFooter>
             </WrapperLogoFooter>
             <WrapperAddressFooter>
                 <LinkFooter href="https://goo.gl/maps/U55JzRCZsnBUYqKL8" >

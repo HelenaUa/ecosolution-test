@@ -155,7 +155,7 @@ return (
                                 <WrapperItemCases>
                                     <InfoTopCases>
                                         <SlideContent>{slide.content}</SlideContent>
-                                        <BtnArrowTop /> 
+                                        <BtnArrowTop type="button"/> 
                                     </InfoTopCases>
 
                                     <InfoBottomCases>

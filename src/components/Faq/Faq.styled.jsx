@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 import add from '../../images/faq/add.png';
 import minus from '../../images/faq/minus.png';
 
@@ -114,6 +115,7 @@ width: 325px;
 
 
 export const BtnFaq = styled.button`
+display: inline-block;
 border: none;
 color: #97D28B;
 background-color: rgba(0, 0, 0, 0);
@@ -251,8 +253,8 @@ letter-spacing: -0.72px;
 }`
 
 
-export const BtnContactUs = styled.button`
-display: flex;
+export const BtnContactUs = styled(Link)`
+display: inline-flex;
 color: #173D33;
 font-family: Fira Sans;
 font-size: 16px;
@@ -267,4 +269,10 @@ width: 140px;
 height: 39px;
 border-radius: 500px;
 border: none;
-cursor: pointer;`
+cursor: pointer;
+transition: background-color 0.3s, color 0.3s;
+
+&:hover,
+&:focus{
+    background-color: #DCEFD8;
+`

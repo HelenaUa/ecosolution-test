@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 import logo from 'images/header/logo.png';
 import arrow from 'images/footer/arrow-right.png';
 
@@ -86,7 +87,7 @@ export const SocialFooter = styled.div`
 }`
 
 
-export const BtnFooter = styled.button`
+export const BtnFooter = styled(Link)`
 width: 32px;
 height: 32px;
 background-image: url('${arrow}');
@@ -97,9 +98,16 @@ justify-content: center;
 border-radius: 50%;
 border: none;
 background-color: #97D28B;
+display: inline-block;
 position: absolute;
 top: 4px; 
 left: 80%;
+cursor: pointer;
+
+&:hover,
+&:focus {
+    background-color: #DCEFD8;
+  }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     top: 4px; 
@@ -136,4 +144,9 @@ font-size: 16px;
 font-weight: 400;
 line-height: normal;
 letter-spacing: -0.64px;
-margin-bottom: 16px;`
+margin-bottom: 16px;
+
+&:hover,
+&:focus {
+    color: #97D28B;
+  }`
