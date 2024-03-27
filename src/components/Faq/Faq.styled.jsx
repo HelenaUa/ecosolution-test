@@ -13,14 +13,14 @@ align-items: center;
 flex-wrap: nowrap;
 background-color: #F3F5FA;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-bottom: 60px;
     justify-content: flex-start;
     align-content: flex-start;
     height: 840px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     justify-content: flex-start;
     align-content: flex-start;
     padding-bottom: 20px;
@@ -39,7 +39,7 @@ width: 320px;
 margin-bottom: 41px;
 margin-right: 42px;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     font-size: 36px;
     line-height: 36px; 
     width: 347px;
@@ -49,7 +49,7 @@ margin-right: 42px;
     margin-right: 0px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     font-size: 48px;
     line-height: 48px;
     width: 398px;
@@ -62,14 +62,14 @@ margin-right: 42px;
 
 export const WrapperLeft = styled.div`
 margin-right: 42px;
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     position: absolute;
     top: 2740px; 
     left: 5%;
     margin-right: 0px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     position: absolute;
     top: 3776px; 
     left: 5%;
@@ -95,7 +95,7 @@ width: 325px;
     border-radius: 50%; 
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 300px;
     &::before {
         width: 310px; 
@@ -104,7 +104,7 @@ width: 325px;
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     width: 564px;
     &::before {
         width: 596px; 
@@ -136,11 +136,11 @@ align-items: center;
 width: 296px;
 margin-bottom: 26px;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 298px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     font-size: 24px;
     letter-spacing: -0.96px;
     width: 544px;
@@ -159,12 +159,12 @@ align-items: center;
 background-position: center;
 justify-content: center;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 28px;
     height: 28px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     width: 28px;
     height: 28px;
 }`
@@ -181,12 +181,12 @@ align-items: center;
 background-position: center;
 justify-content: center
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 28px;
     height: 28px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     width: 28px;
     height: 28px;
 }`
@@ -204,11 +204,11 @@ width: 264px;
 margin-bottom: 35px;
 margin-left: 26px;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 264px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     font-size: 16px;
     letter-spacing: -0.64px;
     width: 508px;
@@ -225,13 +225,13 @@ align-items: center;
 gap: 12px;
 margin-right: 42px;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-top: 97%;
     margin-right: 0px;
     margin-left: 48%;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     margin-top: 56%;
     margin-right: 0px;
     margin-left: 53%;
@@ -247,7 +247,7 @@ font-weight: 400;
 line-height: normal;
 letter-spacing: -0.72px;
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     font-size: 24px;
     letter-spacing: -0.96px;
 }`

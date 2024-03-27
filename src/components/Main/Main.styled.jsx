@@ -11,11 +11,11 @@ justify-content: center;
 align-items: center;
 background-color: #F3F5FA;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-bottom: 80px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     padding-bottom: 100px;
 }`
 
@@ -26,7 +26,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
@@ -35,7 +35,7 @@ align-items: center;
     width: 100%;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
@@ -51,12 +51,12 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     display: block;
     width: 320px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     display: block;
     width: 420px;
 }`
@@ -72,7 +72,7 @@ text-transform: uppercase;
 width: 320px;
 margin-bottom: 24px;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     display: flex;
     align-items: flex-start;
     font-size: 48px;
@@ -81,7 +81,7 @@ margin-bottom: 24px;
     margin-right: 10%;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     display: flex;
     align-items: flex-start;
     font-size: 64px;
@@ -102,12 +102,12 @@ letter-spacing: -0.64px;
 width: 69%;
 margin-bottom: 24px;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 105%;
     margin-bottom: 43px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     width: 96%;
     margin-bottom: 43px;
 }`
@@ -171,7 +171,7 @@ align-items: center;
     border-radius: 50%; 
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     flex-direction: row;
     justify-content: flex-start;
     padding-left: 4%;
@@ -183,7 +183,7 @@ align-items: center;
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     flex-direction: row;
     justify-content: flex-start;
     padding-left: 2%;
@@ -205,13 +205,13 @@ line-height: normal;
 letter-spacing: -0.64px;
 margin-bottom: 8px;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-right: 8%;
     margin-bottom: 0;
     width: 289px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     margin-right: 37%;
     margin-bottom: 0;
     width: 289px;
@@ -226,12 +226,12 @@ font-weight: 400;
 line-height: normal;
 letter-spacing: -0.64px;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-right: 4%;
     width: 163px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     margin-right: 11%;
     width: 163px;
 }`
@@ -240,7 +240,7 @@ letter-spacing: -0.64px;
 export const EcoMain = styled.p`
 display: none;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     display: block;
     color: #173D33;
     font-family: Fira Sans;
@@ -251,7 +251,7 @@ display: none;
     width: 129px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     display: block;
     color: #173D33;
     font-family: Fira Sans;
@@ -267,11 +267,11 @@ export const ImgMain = styled.img`
 width: 320px;
 margin-top: 16px;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 96%;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     width: 97%;
 }`
 

@@ -12,17 +12,18 @@ export const GlobalStyle = createGlobalStyle`
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
+    min-width: 360px;
 
-    // @media screen and (min-width: 360px) and (max-width: 480px) {
+    // @media screen and (min-width: 360px) and (max-width: 767px) {
     //   max-width: 480px;
     // }
 
-    // @media screen and (min-width: 481px) and (max-width: 768px) {
-    //   max-width: 768px;
+    // @media screen and (min-width: 768px) and (max-width: 1279px) {
+    //   min-width: 768px;
     // }
 
-    // @media screen and (min-width: 769px) {
-    //   max-width: 1280px;
+    // @media screen and (min-width: 1280px) {
+    //   min-width: 1280px;
     // }
   }
 

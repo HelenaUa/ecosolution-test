@@ -14,12 +14,14 @@ export const App = () => {
     <>
       <GlobalStyle />
       <Header /> 
-      <Main />
-      <About />
-      <Electricity />
-      <Cases />
-      <Faq />
-      <ContactUs />
+      <main>
+        <Main />
+        <About />
+        <Electricity />
+        <Cases />
+        <Faq />
+        <ContactUs />
+      </main>
       <Footer />
     </>
   );

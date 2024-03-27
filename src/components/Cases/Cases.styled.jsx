@@ -8,26 +8,26 @@ export const CasesBox = styled.section`
 padding: 0px 10px 40px 10px;
 background-color: #F3F5FA;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     // padding-bottom: 100px;
     margin-right: 86px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     // padding-bottom: 120px;
 }`
 
 export const WrapperCases = styled.div`
 // display: flex;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     display: flex;
     
     // justify-content: space-between;
     // margin-bottom: 38px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     display: flex;
     // margin-bottom: 120px;
 }`
@@ -44,7 +44,7 @@ position: relative;
 margin-bottom: 63px;
 margin-left: 36px;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     font-size: 36px;
     line-height: 36px; 
     padding-right: 70px;
@@ -52,7 +52,7 @@ margin-left: 36px;
     border-right: 1px solid #97D28B;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     font-size: 48px;
     line-height: 48px;
     width: 450px;
@@ -68,11 +68,11 @@ align-items: flex-end;
 margin-bottom: 16px;
 margin-left: 36px;
     
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-bottom: 26px;
 }
     
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     margin-bottom: 36px;   
 }`
 
@@ -92,12 +92,12 @@ position: absolute;
 top: 1888px; 
 left: 47%;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     top: 2210px; 
     left: 67%;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     top: 3006px; 
     left: 84%;
 }`
@@ -120,11 +120,11 @@ cursor: pointer;
     background-color: lightgray;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
    
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     width: 84px;
     height: 84px;
 }`
@@ -148,11 +148,11 @@ cursor: pointer;
     background-color: lightgray;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
    
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     width: 84px;
     height: 84px;
 }`
@@ -163,12 +163,12 @@ display: flex;
 overflow: hidden;
 // gap: 24px;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     flex-direction: column;
     margin-right: 0px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     gap: 48px;
 }`
 
@@ -177,13 +177,13 @@ max-width: 100%;
 height: auto;
 background-color: #eaedf1;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     // width: 342px;
     // height: 322px;
     margin-right: 0px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     width: 596px;
     height: 506px;
 }`
@@ -192,12 +192,12 @@ background-color: #eaedf1;
 export const WrapperItemCases = styled.div`
 padding: 24px 12px 12px;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     // padding: 20px 12px 12px 12px;
     padding: 10px 10px 10px 10px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     padding: 38px 48px;
 }`
 
@@ -222,7 +222,7 @@ position: relative;
     border-radius: 50%; 
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     height: 106px;
     margin-bottom: 18px;
     &::before {
@@ -231,7 +231,7 @@ position: relative;
         left: 1%;   
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     height: 92px;
     margin-bottom: 24px;
     &::before {
@@ -260,14 +260,14 @@ cursor: pointer;
     background-color: lightgray;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     // width: 58px;
     // height: 58px;
     margin: 0px;
     padding: 0px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     
 }`
 

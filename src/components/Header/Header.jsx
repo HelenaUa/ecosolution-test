@@ -25,7 +25,7 @@ export const Header = () => {
     }, []);
 
     const headerStyle = {
-        backgroundColor: isScrolled ? 'rgba(234, 237, 241, 1)' : 'initial',
+        backgroundColor: isScrolled ? '#ffffff' : '#F3F5FA',
         transition: 'background-color 0.3s ease',
     };
 

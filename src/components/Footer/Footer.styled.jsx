@@ -4,18 +4,19 @@ import logo from 'images/header/logo.png';
 import arrow from 'images/footer/arrow-right.png';
 
 
-export const FooterBox = styled.section`
+export const FooterBox = styled.footer`
 display: flex;
+
 flex-direction: column;
 padding: 20px 10px;
 background-color: #F3F5FA;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     justify-content: space-between;
     padding: 36px 38px 36px 34px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     justify-content: space-between;
     padding: 36px 70px 36px 40px;
 }`
@@ -23,6 +24,7 @@ background-color: #F3F5FA;
 
 export const WrapperLogoFooter = styled.div`
 display: flex;
+width: 100%;
 flex-direction: column;
 gap: 24px;
 position: relative;
@@ -39,7 +41,7 @@ position: relative;
     border-radius: 50%; 
 } 
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     flex-direction: row;
     gap: 97px;
     flex-wrap: nowrap;
@@ -50,7 +52,7 @@ position: relative;
     }
 }
     
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     flex-direction: row;
     gap: 400px;
     flex-wrap: nowrap;
@@ -68,21 +70,21 @@ height: 40px;
 background-image: url('${logo}');
 margin-left: 10%;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-left: 1%;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     margin-left: 1%;
 }`
 
 
 export const SocialFooter = styled.div`
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-right: 23%;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     margin-right: 8%;
 }`
 
@@ -109,12 +111,12 @@ cursor: pointer;
     background-color: #DCEFD8;
   }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     top: 4px; 
     left: 95%;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     top: 4px; 
     left: 97%;
 }`
@@ -126,12 +128,12 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     flex-direction: row;
     justify-content: space-between;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     flex-direction: row;
     justify-content: space-between;
 }`

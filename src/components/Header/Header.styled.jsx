@@ -4,7 +4,7 @@ import menu from 'images/header/menu.png';
 import logo from 'images/header/logo.png';
 
 
-export const HeaderBox = styled.section`
+export const HeaderBox = styled.header`
 position: fixed;
 z-index: 1000;
 top: 0;
@@ -12,15 +12,17 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 width: 100%;
+min-width: 360px;
 background-color: #F3F5FA;
-padding: 36px 20px 36px 0px;
+// padding: 36px 20px 36px 0px;
+padding: 36px 0;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     justify-content: space-between;
     padding: 36px 24px 36px 24px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     justify-content: space-between;
     padding: 36px 24px 36px 24px;
 }`
@@ -34,11 +36,11 @@ background-image: url('${logo}');
 background-repeat: no-repeat;
 margin-right: 13px;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-right: 0px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     margin-right: 0px;
 }`
 
@@ -62,11 +64,11 @@ cursor: pointer;
     background-color: #97D28B;
   }
   
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-left: 30%;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     margin-left: 56%;
 }`
 
@@ -74,7 +76,7 @@ cursor: pointer;
 export const BtnHeader = styled(Link)`
 display: none;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     display: flex;
     color: #173D33;
     font-family: Fira Sans;
@@ -100,7 +102,7 @@ display: none;
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
     display: inline-flex;
     color: #173D33;
     font-family: Fira Sans;
